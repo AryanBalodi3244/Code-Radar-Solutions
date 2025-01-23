@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 
-char main() {
+void main() {
     float a;
     scanf("%f",&a);
 
     char l[]="You entered: %f", a;
-    return l;
+    printf("%s",l);
     
 }
