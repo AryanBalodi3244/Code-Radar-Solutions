@@ -3,5 +3,5 @@
 void main(){
     double a;
     scanf("%f",&a);
-    printf("You entered: %df",a);
+    printf("You entered: %lf",a);
 }
