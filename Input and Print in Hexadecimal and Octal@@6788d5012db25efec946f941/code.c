@@ -3,5 +3,5 @@
 void main(){
     int a;
     scanf("%d",&a);
-    printf("Hexadecimal: %u\nOctal: %o",a,a);
+    printf("Hexadecimal: %h\nOctal: %o",a,a);
 }
