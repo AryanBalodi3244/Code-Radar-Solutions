@@ -3,6 +3,6 @@
 
 
 void main(){
-    double a,b;
-scanf("%f %f",&a,&b);
-printf("%s", sqrt(a)==b?"Yes":"No");}
+    int a,b;
+scanf("%d %d",&a,&b);
+printf("%s", (double)sqrt(a)==b?"Yes":"No");}
