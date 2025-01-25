@@ -3,7 +3,9 @@
 
 
 void main(){
-    int a,b;
+int a,b;
 scanf("%d %d",&a,&b);
-double n=sqrt(a);
-printf("%s", (int)n==b?"Yes":"No");}
+double n=math.sqrt(a);
+printf("%s", (int)n==b ?"Yes":"No");
+
+}
