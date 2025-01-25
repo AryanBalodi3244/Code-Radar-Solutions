@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-char main(){
+void main(){
     int a;
     scanf("%d",&a);
-    return a%2==0 ? "Even":"Odd";
+   printf("%s",a%2 ==0?"Even":"Odd");
 }
