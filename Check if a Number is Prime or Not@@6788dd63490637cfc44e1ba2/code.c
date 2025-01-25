@@ -14,5 +14,5 @@ bool isPrime(int a){
 void main(){
     int b;
     scanf("%d",&b);
-    printf("%s",isPrime(b)?"Prime":"Not Prime");
+    printf("%s",isPrime(b) ? "Prime" : "Not Prime" );
 }
