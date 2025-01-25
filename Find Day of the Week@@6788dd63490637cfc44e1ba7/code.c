@@ -1,8 +1,18 @@
 #include <stdio.h>
 
 void main(){
-    char days[7][10]={"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"};
     int a;
     scanf("%d",&a);
-    printf("%s",days[a-1]);
+    switch(a){
+        case 1:
+        printf("Monday");
+        break;
+        case 2: printf("Tuesday");break;
+        case 3: printf("Wednesday");break;
+        case 4: printf("Thursday");break;
+        case 5: printf("Friday");break;
+        case 6: printf("Saturday");break;
+        case 7: printf("Sunday");break;
+    } 
+
 }
