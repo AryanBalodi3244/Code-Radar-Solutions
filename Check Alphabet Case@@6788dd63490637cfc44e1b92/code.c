@@ -5,5 +5,5 @@
 void main(){
     char a;
     scanf("%c",&a);
-    printf("%s",isupper(a)?"Uppercase":"Lowercase");
+    printf("%s",isalpha(a)?isupper(a)?"Uppercase":"Lowercase":"Not a alphabet");
 }
