@@ -13,5 +13,5 @@ int main(){
         }
 
     }
-    retuen -1;
+    return -1;
 }
