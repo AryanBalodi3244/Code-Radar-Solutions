@@ -8,11 +8,7 @@ void main() {
         }
         int odd=0,even=0,i=0;
     while (arr[i]!='\0'){
-if (arr[i]%2==0){
-    odd++;
-}
-else{
-    even++;
-}
-
-i++;    }    }
+if (arr[i]%2==0){odd++;}
+else{even++;}
+i++;    }  
+printf("%d %d",even,odd);  }
