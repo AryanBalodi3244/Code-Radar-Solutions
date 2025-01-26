@@ -12,9 +12,8 @@ void main(){
         if (arr[i] > arr[i+1]){
             check=1;
             break;
-        }
+        }}
 printf("%s",check==0?"Sorted":"Not Sorted");
 
     }
 
-}
