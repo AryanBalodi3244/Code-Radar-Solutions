@@ -5,5 +5,5 @@ void main(){
     int a;
     scanf("%d",&a);
     if (a<=12 && a>=1){    printf("%d",m[a-1]);}
-    else{printf("Invalid Month");}
+    else{printf("Invalid month");}
 }
