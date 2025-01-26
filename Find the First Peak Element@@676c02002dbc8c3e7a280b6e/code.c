@@ -12,5 +12,5 @@ void main(){
             check=1;
             break;
         } }
-    if(check==0){printf("-1");}
+    if(check==0){printf(-1);}
 }
