@@ -10,6 +10,8 @@ void main(){
         if (i==0 || i==(size-2)){
             if (arr[i] > arr[i+1]){
                 printf("%d",arr[i]);
+                check=1;
+                break;
             }
         }
         if (arr[i-1]<arr[i] && arr[i]>arr[i+1]){
