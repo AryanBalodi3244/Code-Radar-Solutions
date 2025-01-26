@@ -13,7 +13,7 @@ void main(){
             check=1;
             break;
         }
-printf("%s",check?"Sorted":"Not Sorted");
+printf("%s",check==0?"Sorted":"Not Sorted");
 
     }
 
