@@ -12,19 +12,19 @@ void main(){
         printf("%d",arr[i]);
         check=1;
         break;
-    }
-    if (i==(size-1)){
+    }}
+    else if (i==(size-1)){
         if (arr[i]>arr[i-1]){
             printf("%d",arr[i]);
             check=1;
             break;
         }
     }
- }
+ else{
         if (arr[i-1]<arr[i] && arr[i]>arr[i+1]){
             printf("%d",arr[i]);
             check=1;
             break;
-        } }
+        } }}
     if(check==0){printf("-1");}
 }
