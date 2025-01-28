@@ -7,11 +7,12 @@ void main(){
         for (j=0;j<((2*n)-1);j++){
 
             if (j>=n-(i-n) && j<=n+(i-n)){
-                a=1;
+                int a=1;
                 print("%d",a);
                 a++;
 
             }
+            printf("\n");
         }
     }
 }
