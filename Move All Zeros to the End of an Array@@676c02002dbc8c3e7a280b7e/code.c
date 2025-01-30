@@ -11,7 +11,7 @@ while (arr[i]!='\0'){
 if (arr[i]==0){zero++;}
 else{temp[j++]=arr[i];}
 i++;}
-for (int i=0;i<size;i++){
+for (int i=0;i<size-zero;i++){
     printf("%d ",temp[i]);
 }
 for (int i=0;i<zero;i++){
