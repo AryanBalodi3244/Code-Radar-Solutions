@@ -9,5 +9,6 @@ void main(){
             printf("%d",k);
             k= 0?1:0;
         }
+        printf("\n");
     }
 }
