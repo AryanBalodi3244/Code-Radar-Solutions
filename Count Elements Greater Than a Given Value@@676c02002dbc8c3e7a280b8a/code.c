@@ -3,7 +3,7 @@
 
 
 void main() {
-    int size,k,count=0,;
+    int size,k,count=0;
     scanf("%d %d", &size,&k);
 
     int arr[size];
