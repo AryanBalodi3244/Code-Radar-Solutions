@@ -5,7 +5,7 @@
 void main(){
 int a,b;
 scanf("%d %d",&a,&b);
-double n=sqrt(a);
+double n=pow(a ,1/2);
 printf("%s", (int)n==b ?"Yes":"No");
 
 }
