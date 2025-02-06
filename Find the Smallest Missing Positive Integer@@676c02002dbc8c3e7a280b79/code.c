@@ -18,15 +18,14 @@ void main(){
                     arr[j+1]=arr[j]^arr[j+1]; 
                     arr[j]=arr[j]^arr[j+1]; } }} 
 
-        int i=0;
-        while (arr[i]!='\0'){
-            if (arr[i+1]!=arr[i]+1){
-                printf("%d",arr[i]+1);
-                break;
-            }
-            i++;
-            if(i==size-1){printf("%d",1);}
+        int ,missing=1;
+for(int i=0;i<count;i++)
+        {
+            if (arr[i]==missing){missing++;}
+            else if(arr[i]>missing){break;}
+           
         }
+        printf("%d",missing);
         // for (i=0;i<n;i++){
         //     printf("%d ",arr[i]);
         // }
