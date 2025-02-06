@@ -18,7 +18,7 @@ void main(){
                     arr[j+1]=arr[j]^arr[j+1]; 
                     arr[j]=arr[j]^arr[j+1]; } }} 
 
-        int ,missing=1;
+        int missing=1;
 for(int i=0;i<count;i++)
         {
             if (arr[i]==missing){missing++;}
