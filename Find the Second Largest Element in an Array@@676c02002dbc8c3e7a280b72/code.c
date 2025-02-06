@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <math.h>
 void main(){
     int size;
     scanf("%d",&size);
@@ -8,9 +8,11 @@ void main(){
     int l=arr[0];
     int sl=arr[0];
      for (int i=0;i<size;i++){  
-         if (arr[i]>l){
+         if (abs(arr[i])>abs(l)){
             sl=l;
             l=arr[i];
          }}
-         printf("%d",sl);
+
+         if (sl==l){printf("%d",-1);}
+        else {printf("%d",sl);}
 }
