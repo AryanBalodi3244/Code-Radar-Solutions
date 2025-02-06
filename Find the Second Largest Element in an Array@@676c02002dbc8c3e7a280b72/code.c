@@ -11,7 +11,9 @@ void main(){
          if (arr[i]>l){
             sl=l;
             l=arr[i];
-         }}
+
+         }
+         else if(sl>arr[i] && arr[i]!=l){sl=arr[i];}}
 
          if (sl==l){printf("%d",-1);}
         else {printf("%d",sl);}
