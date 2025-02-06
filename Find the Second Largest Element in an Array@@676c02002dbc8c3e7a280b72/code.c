@@ -6,7 +6,7 @@ void main(){
     int arr[size];
     for (int i=0;i<size;i++){scanf("%d",&arr[i]);}
     int l=arr[0];
-    int sl=9999999;
+    int sl=-9999999;
      for (int i=0;i<size;i++){  
          if (arr[i]>l){
             sl=l;
@@ -15,6 +15,6 @@ void main(){
          }
          else if(arr[i] > sl && arr[i]!=l ){sl=arr[i];}}
 
-         if (sl==9999999){printf("%d",-1);}
+         if (sl==-9999999){printf("%d",-1);}
         else {printf("%d",sl);}
 }
