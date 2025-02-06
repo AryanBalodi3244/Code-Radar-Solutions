@@ -3,15 +3,15 @@
 void main(){ 
     int size;
     scanf("%d",&size);
-    int *arr = (int *)malloc(size * sizeof(int));
+    int arr[size];
     int check,count=0;
     for (int i=0;i<size;i++){
         scanf("%d",&check);
         if  (check>=0){
             arr[count++]=check;
     }}
-        for (int i=0;i<size;i++){ 
-            for (int j=0;j<size-1;j++){ 
+        for (int i=0;i<sizeof(arr);i++){ 
+            for (int j=0;j<sizeof(arr)-1;j++){ 
                 if (arr[j]>arr[j+1]){ 
                     arr[j]=arr[j]^arr[j+1]; 
                     arr[j+1]=arr[j]^arr[j+1]; 
@@ -26,7 +26,7 @@ void main(){
         //     i++;
         //     if(i==size-1){printf("%d",1);}
         // }
-        for (i=0;i<size;i++){
+        for (i=0;i<sizeof(arr);i++){
             printf("%d ",arr[i]);
         }
 
