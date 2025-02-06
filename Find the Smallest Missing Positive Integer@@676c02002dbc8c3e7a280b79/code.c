@@ -20,7 +20,7 @@ void main(){
                 break;
             }
             else if (arr[i+1]!=arr[i]+1){
-                printf("%d",arr[i]-1);
+                printf("%d",arr[i]+1);
                 break;
             }
         }
