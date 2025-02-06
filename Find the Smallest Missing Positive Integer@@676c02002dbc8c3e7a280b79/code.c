@@ -3,8 +3,12 @@
 void main(){ 
     int size;
     scanf("%d",&size);
-    int arr[size];
-    for (int i=0;i<size;i++){scanf("%d",&arr[i]);}
+    int arr[]=malloc(sizeof(int)*size);
+    int check;
+    for (int i=0;i<size){scanf("%d",check) ;
+    if  (check>=0){
+        arr[i++]=check;
+    }}
         for (int i=0;i<size;i++){ 
             for (int j=0;j<size-1;j++){ 
                 if (arr[j]>arr[j+1]){ 
@@ -14,16 +18,10 @@ void main(){
 
         int i=0;
         while (arr[i]!='\0'){
-        if(arr[i]<0){
-            if (arr[i+1]!=arr[i]-1){
-                printf("%d",arr[i]-1);
-                break;
-            }
-            else if (arr[i+1]!=arr[i]+1){
+            if (arr[i+1]!=arr[i]+1){
                 printf("%d",arr[i]+1);
                 break;
             }
-        }
             i++;
         }
 
