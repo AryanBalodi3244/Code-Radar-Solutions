@@ -4,7 +4,7 @@ void main(){
     int size;
     scanf("%d",&size);
     int *arr = (int *)malloc(size * sizeof(int));
-    int check.count=0;
+    int check,count=0;
     for (int i=0;i<size){
         scanf("%d",&check) ;
         if  (check>=0){
