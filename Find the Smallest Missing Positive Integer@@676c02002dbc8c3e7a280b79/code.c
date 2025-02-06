@@ -19,16 +19,16 @@ void main(){
                     arr[j]=arr[j]^arr[j+1]; } }} 
 
         int i=0;
-        // while (arr[i]!='\0'){
-        //     if (arr[i+1]!=arr[i]+1){
-        //         printf("%d",arr[i]+1);
-        //         break;
-        //     }
-        //     i++;
-        //     if(i==size-1){printf("%d",1);}
-        // }
-        for (i=0;i<n;i++){
-            printf("%d ",arr[i]);
+        while (arr[i]!='\0'){
+            if (arr[i+1]!=arr[i]+1){
+                printf("%d",arr[i]+1);
+                break;
+            }
+            i++;
+            if(i==size-1){printf("%d",1);}
         }
+        // for (i=0;i<n;i++){
+        //     printf("%d ",arr[i]);
+        // }
 
     } 
