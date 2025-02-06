@@ -10,7 +10,7 @@ for (int i=0;i<size;i++){scanf("%d",&arr[i]);}
             if (arr[j]>arr[j+1]){ 
                 arr[j]=arr[j]^arr[j+1]; 
                 arr[j+1]=arr[j]^arr[j+1]; 
-                arr[j]=arr[j]^arr[j+1]; } } 
+                arr[j]=arr[j]^arr[j+1]; } }} 
     for (int i=0;i<size;i++){ printf("%d ",arr[i]); 
     
-    } }}
+    } }
