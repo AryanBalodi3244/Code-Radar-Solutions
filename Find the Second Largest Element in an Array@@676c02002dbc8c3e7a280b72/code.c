@@ -11,8 +11,6 @@ void main(){
          if (arr[i]>l){
             sl=l;
             l=arr[i];
-            
-         }
-         }
-         prinf("%d",sl);
+         }}
+         printf("%d",sl);
 }
