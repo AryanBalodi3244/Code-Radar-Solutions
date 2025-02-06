@@ -3,11 +3,12 @@
 void main(){ 
     int size;
     scanf("%d",&size);
-        int *arr = (int *)malloc(size * sizeof(int));
+    int *arr = (int *)malloc(size * sizeof(int));
     int check;
-    for (int i=0;i<size){scanf("%d",&check) ;
-    if  (check>=0){
-        arr[i++]=check;
+    for (int i=0;i<size){
+        scanf("%d",&check) ;
+        if  (check>=0){
+            arr[i++]=check;
     }}
         for (int i=0;i<size;i++){ 
             for (int j=0;j<size-1;j++){ 
