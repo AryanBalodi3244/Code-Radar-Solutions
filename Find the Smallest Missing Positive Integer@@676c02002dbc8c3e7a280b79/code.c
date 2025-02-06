@@ -5,8 +5,8 @@ void main(){
     scanf("%d",&size);
     int *arr = (int *)malloc(size * sizeof(int));
     int check,count=0;
-    for (int i=0;i<size){
-        scanf("%d",&check) ;
+    for (int i=0;i<size;i++){
+        scanf("%d",&check);
         if  (check>=0){
             arr[count++]=check;
     }}
