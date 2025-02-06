@@ -14,5 +14,5 @@ void main(){
          }}
 
          if (sl==l){printf("%d",-1);}
-        else {printf("%d",abs(l)>abs(sl)?sl:l);}
+        else {printf("%d",sl);}
 }
