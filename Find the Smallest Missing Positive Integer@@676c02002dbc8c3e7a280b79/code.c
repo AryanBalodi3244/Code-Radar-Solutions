@@ -10,7 +10,7 @@ void main(){
         if  (check>=0){
             arr[count++]=check;
     }}
-      int n = sizeof(arr) / sizeof(arr[0]);
+      int n = count+1;
         for (int i=0;i<n;i++){ 
             for (int j=0;j<n-1;j++){ 
                 if (arr[j]>arr[j+1]){ 
