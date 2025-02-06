@@ -27,7 +27,7 @@ void main(){
         //     if(i==size-1){printf("%d",1);}
         // }
         for (i=0;i<size;i++){
-            printf("%d",arr[i]);
+            printf("%d ",arr[i]);
         }
 
     } 
