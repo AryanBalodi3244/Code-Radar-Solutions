@@ -3,7 +3,7 @@
 void main(){ 
     int size;
     scanf("%d",&size);
-    int arr[]=malloc(sizeof(int)*size);
+        int *arr = (int *)malloc(size * sizeof(int));
     int check;
     for (int i=0;i<size){scanf("%d",check) ;
     if  (check>=0){
