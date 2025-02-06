@@ -10,8 +10,9 @@ void main(){
         if  (check>=0){
             arr[count++]=check;
     }}
-        for (int i=0;i<sizeof(arr[]);i++){ 
-            for (int j=0;j<sizeof(arr)-1;j++){ 
+      int n = sizeof(arr) / sizeof(arr[0]);
+        for (int i=0;i<n;i++){ 
+            for (int j=0;j<n-1;j++){ 
                 if (arr[j]>arr[j+1]){ 
                     arr[j]=arr[j]^arr[j+1]; 
                     arr[j+1]=arr[j]^arr[j+1]; 
@@ -26,7 +27,7 @@ void main(){
         //     i++;
         //     if(i==size-1){printf("%d",1);}
         // }
-        for (i=0;i<sizeof(arr);i++){
+        for (i=0;i<n;i++){
             printf("%d ",arr[i]);
         }
 
