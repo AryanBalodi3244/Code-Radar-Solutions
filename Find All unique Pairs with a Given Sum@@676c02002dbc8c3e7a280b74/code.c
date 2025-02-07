@@ -13,10 +13,10 @@ void main(){
         dup++;
       }
     }
-    printf("%d %d",dup, size);
+
     scanf("%d",&target);
     int c;
-    for(int i=0;i<size;i++){
+    for(int i=0;dup==size ? i<1:i<size;i++){
    c = target-arr[i];
         for (int j=i+1;j<size;j++){
             if (arr[j]==c){
