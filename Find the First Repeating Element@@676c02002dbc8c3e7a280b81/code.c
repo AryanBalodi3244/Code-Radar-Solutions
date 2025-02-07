@@ -11,7 +11,7 @@ void main(){
         for (int i = 0; i < size; i++) {
              for (int j = i+1; j < size-1; j++) {
                 if (arr[i]==arr[j]){
-                    printf("%d",arr[j]);
+                    printf("%d",arr[i]);
                     flag =1;
                     goto end;
                 }
