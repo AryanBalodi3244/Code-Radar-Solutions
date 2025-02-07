@@ -13,7 +13,7 @@ void main(){
         dup++;
       }
     }
-    printf("%d %d",dup, size)
+    printf("%d %d",dup, size);
     scanf("%d",&target);
     int c;
     for(int i=0;i<size;i++){
