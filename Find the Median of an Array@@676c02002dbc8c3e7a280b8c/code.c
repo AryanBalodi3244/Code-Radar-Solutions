@@ -20,7 +20,7 @@ void main(){
     
     
     if (size%2==0){
-        printf("%d", (arr[size/2] + arr[size/2 +1])/2);
+        printf("%d", (arr[size/2] + arr[size/2 -1])/2);
     }
     else {
         printf("%d", (arr[size/2]));
