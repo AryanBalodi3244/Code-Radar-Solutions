@@ -5,13 +5,13 @@ void main(){
     scanf("%d", &size);
     int arr[size];
     for (int i = 0; i < size; i++) {
-
-        scanf("%d",&temp);
-        arr[i]=temp;
-        if (temp == arr[0]){
-            dup++;
-        }
-
+        scanf("%d",&   arr[i]);
+    }
+    temp=arr[0];
+    for (int i = 0; i < size; i++) {
+      if (temp==arr[i]){
+        dup++;
+      }
     }
     scanf("%d",&target);
     int c;
