@@ -11,7 +11,7 @@ void main(){
     int c;
     for(int i=0;i<size;i++){
    c = target-arr[i];
-        for (int j=i+1;j<size-i;j++){
+        for (int j=i+1;j<size;j++){
             if (arr[j]==c){
                 printf("%d %d\n",arr[i],arr[j]);
             }
