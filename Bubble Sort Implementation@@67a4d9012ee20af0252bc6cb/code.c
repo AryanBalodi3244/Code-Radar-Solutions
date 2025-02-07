@@ -11,8 +11,6 @@ void bubbleSort(int arr[],int size){
 
          }
        } 
- 
-
 }
 int main(){
     int size;
@@ -23,7 +21,7 @@ int main(){
     }
     bubbleSort(arr[],size);
     for (int i=0;i<size;i++){
-        printf("%d",arr[i]);
+        printf("%d ",arr[i]);
     }
     return 0;
 }
