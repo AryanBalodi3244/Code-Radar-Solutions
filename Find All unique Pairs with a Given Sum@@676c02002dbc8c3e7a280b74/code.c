@@ -13,16 +13,16 @@ void main(){
         dup++;
       }
     }
+    int flag;
+    if (dup==size){flag =1;}
     scanf("%d",&target);
     int c;
     for(int i=0;i<size;i++){
    c = target-arr[i];
-        for (int j=i+1;j<size;j++){
+        for (int j=i+1;j<size && flag !=1;j++){
             if (arr[j]==c){
                 printf("%d %d\n",arr[i],arr[j]);
-                if ( dup==size){
-                    break;
-                }
+              
             }
         }
     }
