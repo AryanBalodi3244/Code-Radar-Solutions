@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 void main(){
     int size,target;
     scanf("%d", &size);
@@ -10,7 +10,8 @@ void main(){
 int c;
     for (int i=0;i<size;i++){
          int dsum=0;
-        while (arr[i]>0){
+
+        while (abs(arr[i])>0){
             c=arr[i]%10;
             dsum+=c;
             arr[i]/=10;
