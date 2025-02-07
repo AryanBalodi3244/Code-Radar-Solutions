@@ -8,7 +8,7 @@ void main(){
         scanf("%d", &arr[i]);
     }
 
-    int s=0,end=size-1.flag=0;
+    int s=0,end=size-1,flag=0;
     for (int i=0;i<size && s!=end;i++){
         if (arr[s]!=arr[end]){
             printf("NO");
