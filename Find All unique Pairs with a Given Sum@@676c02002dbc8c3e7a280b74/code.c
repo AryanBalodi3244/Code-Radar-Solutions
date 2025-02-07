@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main(){
+int main(){
     int size,target,dup=0,temp;
     scanf("%d", &size);
     int arr[size];
@@ -29,4 +29,6 @@ scanf("%d",&target);
  
         }
     }
+end :
+return 0;
 }
