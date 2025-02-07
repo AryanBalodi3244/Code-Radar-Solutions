@@ -16,7 +16,7 @@ void main(){
         }
         else {
             s+=1;
-            end-=1
+            end-=1;
 
         }
     }
