@@ -7,7 +7,7 @@ void main(){
     for (int i = 0; i < size; i++) {
         scanf("%d", &arr[i]);
     }
-    int dsum=0;
+int c;
     for (int i=0;i<size;i++){
          int dsum=0;
         while (arr[i]>0){
