@@ -8,8 +8,9 @@ void main(){
         scanf("%d", &arr[i]);
     }
     scanf("%d",&target);
-    for (int i=0;i<size;i++){
-        int c= target-a[i];
+    int c;
+    for(int i=0;i<size;i++){
+   c = target-a[i];
         for (int j=i+1;j<size-i;j++){
             if (arr[j]==c){
                 printf("%d %d",arr[i],arr[j]);
