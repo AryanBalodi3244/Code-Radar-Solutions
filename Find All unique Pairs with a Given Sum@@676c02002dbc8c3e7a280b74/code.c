@@ -16,12 +16,13 @@ void main(){
 
     scanf("%d",&target);
     int c;
-    for(int i=0;dup==size ? i<1:i<size;i++){
+    for(int i=0;i<size;i++){
    c = target-arr[i];
         for (int j=i+1;j<size;j++){
+            if (dup==size){break;}
             if (arr[j]==c){
                 printf("%d %d\n",arr[i],arr[j]);
-              
+            
             }
         }
     }
