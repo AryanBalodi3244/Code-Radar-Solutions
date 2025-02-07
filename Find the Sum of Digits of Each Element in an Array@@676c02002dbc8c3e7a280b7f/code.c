@@ -16,7 +16,7 @@ int c;
             dsum+=c;
             arr[i]/=10;
         }
-        printf("%d ",dsum);
+        printf("%d ",abs(dsum));
     }
     
     }
