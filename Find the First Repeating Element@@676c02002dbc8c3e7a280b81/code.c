@@ -13,11 +13,12 @@ void main(){
                 if (arr[i]==arr[j]){
                     printf("%d",arr[j]);
                     flag =1;
-                    break;
+                    goto end;
                 }
        
     }
     }
+    end: 
     if (flag==0){
         printf("%d",-1);
     }
