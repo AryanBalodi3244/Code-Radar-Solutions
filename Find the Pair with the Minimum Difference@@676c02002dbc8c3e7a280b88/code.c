@@ -8,15 +8,20 @@ void main(){
         scanf("%d",&arr[i]);
 
     }
-      
+      int mindiff=99999;
+      int elm1 ,elm2;
         for (int i=0;i<size;i++){ 
-        for (int j=0;j<size-1;j++){ 
-                if (arr[j]>arr[j+1]){ 
-                    arr[j]=arr[j]^arr[j+1]; 
-                    arr[j+1]=arr[j]^arr[j+1]; 
-                    arr[j]=arr[j]^arr[j+1]; } }} 
+            for (int j=i+1;j<size;j++){ 
+                if (arr[j]-arr[i] <mindiff){
+                    mindiff=arr[j]-arr[i];
+                    elm1 = arr[i]>arr[j]?arr[j]:arr[i];
+                    elm2 = arr[i]>arr[j]?arr[i]:arr[j];
+                }
+               
+               
+               
+               }} 
                     
-     printf("%d %d",arr[1],arr[0]);
-                    
-                    
+
+               printf("%d %d",elm1,elm2) ;    
                     }
