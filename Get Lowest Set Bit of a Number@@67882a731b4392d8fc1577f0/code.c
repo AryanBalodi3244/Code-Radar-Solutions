@@ -1,9 +1,13 @@
 #include <stdio.h>
 
 void main(){
-    int a,b;
+    int a,pos=0;
     scanf("%d",&a);
-    int lsb= a&1;
-    printf("%d", lsb-1);
+    while (!(n&1)){
+
+        a>>=1;
+        pos++;
+    }
+    printf("%d", pos);
 
 }
