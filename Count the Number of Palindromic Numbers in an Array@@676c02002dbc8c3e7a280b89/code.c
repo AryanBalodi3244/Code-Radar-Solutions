@@ -3,8 +3,8 @@
 int isPali(int n){
     int reversed,original=n;
     while (n>0){
-        reversed =  reversed*10 + num%10;
-        num/=10;
+        reversed =  reversed*10 + n%10;
+        n/=10;
     }
     return reversed==original;
 }
@@ -22,5 +22,5 @@ void main(){
             count++;
         }
     }
-printf("%d",count);
+    printf("%d",count);
 }
