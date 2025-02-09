@@ -17,7 +17,7 @@ void main(){
         for (int i=0;i<size;i++){ 
             for (int j=i+1;j<size;j++){ 
                 int diff = abs(arr[j] - arr[i]);
-                if (diff<mindiff){
+                if (diff<mindiff && elm1<(arr[i] || arr[j]) && elm2<(arr[i] || arr[j]) ){
                     mindiff=diff;
                     elm1 = arr[i]>arr[j]?arr[j]:arr[i];
                     elm2 = arr[i]>arr[j]?arr[i]:arr[j];
