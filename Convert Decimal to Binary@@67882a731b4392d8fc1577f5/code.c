@@ -8,4 +8,7 @@ void main(){
     if ((n >> i) & 1) {flag = 1;}
     if (flag) {printf("%d", (n >> i) & 1);  }
     }
+    if (flag==0){
+        printf("%d",0);
+    }
 }
