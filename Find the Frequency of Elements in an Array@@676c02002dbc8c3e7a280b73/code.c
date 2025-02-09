@@ -10,7 +10,7 @@ int main(){
     for (int i = 0; i < size; i++) {
         seen[arr[i]]++;
         }
-  for (int i = 0; i < 100; i++) {
+  for (int i = 0; i < 101; i++) {
         if (seen[i]!=0){
             printf("%d %d\n", i,seen[i]);
         }        
