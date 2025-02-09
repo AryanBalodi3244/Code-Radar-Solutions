@@ -12,7 +12,7 @@ int main(){
         }
   for (int i = 0; i < 101; i++) {
         if (seen[i]!=0){
-            printf("%d %d\n", i,seen[arr[i]]);
+            printf("%d %d\n", i,seen[i]);
         }        
         }
     
