@@ -1,20 +1,33 @@
 #include <stdio.h>
 
-int main(){
-    int size,target;
-    scanf("%d", &size);
-    int arr[size];
-    int seen[101]={0};
-    int count=0;
-    for (int i = 0; i < size; i++) {scanf("%d", &arr[i]);}
-    for (int i = 0; i < size; i++) {
-        seen[arr[i]]++;
-        }
-  for (int i = 0; i < 101; i++) {
-        if (seen[i]!=0){
-            printf("%d %d\n", i,seen[i]);
-        }        
-        }
-    
-    return 0;
+int main() {
+    int n;
+    scanf("%d", &n);
+    int nums[n], used[n], usedCount = 0;
+
+    for (int i=0; i<n; i++){
+        scanf("%d", &nums[i]);
     }
+
+    for (int i=0; i<n; i++){
+        int count = 0, isUsed = 0;
+        for (int j=0; j<usedCount; j++){
+            if(nums[i]==used[j]){
+                isUsed = 1;
+                break;
+            }
+        }
+        if (!isUsed){
+            for (int j=0; j<n; j++){
+                if(nums[i]==nums[j]){
+                    count++;
+                }
+            }
+            used[usedCount++] = nums[i];
+        }
+        if (count != 0){
+            printf("%d %d\n", nums[i], count);
+        }
+    }
+    return 0;
+}
