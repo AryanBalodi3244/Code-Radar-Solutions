@@ -11,7 +11,8 @@ void main(){
     if (sizeof(arr)==1){
         printf("%d",-1);
     }
-      int mindiff=99999;
+      else{
+        int mindiff=99999;
       int elm1 ,elm2;
         for (int i=0;i<size;i++){ 
             for (int j=i+1;j<size;j++){ 
@@ -24,4 +25,5 @@ void main(){
                }} 
                     
                printf("%d %d",elm1,elm2) ;    
+      }
                     }
