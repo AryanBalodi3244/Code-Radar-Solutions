@@ -11,10 +11,12 @@ void binarySearch(int arr[], int l , int r , int target){
             }
         }
         else {
-            printf("%d",mid);
+            return mid;
             break;
         }
     }
+    return -1;
+
 }
 void main(){
     int size,target;
