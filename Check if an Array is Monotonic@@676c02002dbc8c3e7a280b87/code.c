@@ -8,15 +8,17 @@
         for (int i = 0; i < size; i++) {
             scanf("%d", &arr[i]);
         }
-    int flagi=0;
-    int flagd=0;
-    for (int i = 0; i <= size-1; i++) {
-         if (arr[i]<arr[i+1]){
-            flagi=1;
-         }
-         else if (arr[i] > arr[i + 1]){
-            flagd=1;
-         }
+    int increasing = 1, decreasing = 1;
+
+    for (int i = 0; i < size - 1; i++) {
+        if (arr[i] < arr[i + 1]) {
+            decreasing = 0;  
+        } 
+        else if (arr[i] > arr[i + 1]) {
+            increasing = 0;  
         }
-        printf("%s" , (flagi==0 || flagd==0)?"YES":"NO");
+    }
+
+    printf("%s\n", (increasing || decreasing) ? "YES" : "NO");
+    return 0;
     }
