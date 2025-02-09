@@ -46,12 +46,14 @@ if (l>=r) return;
     merge(arr, mid ,l , r);
 
 }
+
 void main(){
-    int size,target;
+    int size,c;
     scanf("%d", &size);
     int arr[size];
     for (int i = 0; i < size; i++) {
-        scanf("%d",abs(&arr[i]) );
+        scanf("%d",&c );
+        arr[i]=abs(c);
     }
     mergeSort(arr, 0, size-1);
    printf("%d",arr[size-1]*arr[size-2]);
