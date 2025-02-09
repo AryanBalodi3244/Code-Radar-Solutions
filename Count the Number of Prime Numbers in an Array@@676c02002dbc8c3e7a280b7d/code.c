@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 bool isPrime(int a){
-    if (a==1){
+    if (a==1 || a==0){
         return false;
     }
     for (int i=2;i<a;i++){
