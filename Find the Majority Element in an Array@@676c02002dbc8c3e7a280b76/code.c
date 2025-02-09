@@ -8,7 +8,9 @@ int main(){
     int count=0;
     for (int i = 0; i < size; i++) {scanf("%d", &arr[i]);}
     for (int i = 0; i < size; i++) {
-        if seen[arr[i]] count++;
+            if (seen[arr[i]]) {
+            count++;
+        }
         seen[arr[i]]=1;
         if (count>(size/2)){
 
