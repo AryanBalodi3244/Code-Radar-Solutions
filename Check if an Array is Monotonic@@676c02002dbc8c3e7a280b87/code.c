@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include<stdbool.h>
+#include <stdbool.h>
     void main(){
         int size,target;
         scanf("%d", &size);
@@ -11,12 +11,12 @@
     int flagi=0;
     int flagd=0;
     for (int i = 0; i < size; i++) {
-         if ((arr[i]>=arr[i+1])==false){
+         if ((arr[i]>=arr[i+1])==true){
             flagi=1;
          }
         }
         for (int i = 0; i < size; i++) {
-         if ((arr[i+1]>=arr[i])==true){
+         if ((arr[i+1]>=arr[i])==false){
             flagd=1;
          }
         }
