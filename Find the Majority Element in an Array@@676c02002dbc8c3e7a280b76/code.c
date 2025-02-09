@@ -12,9 +12,9 @@ int main(){
         seen[arr[i]]=1;
         if (count>(size/2)){
 
-              printf("%d\n", arr[i]);
+            printf("%d\n", arr[i]);
             return 0;
-        };
+        }
 
 
         }
