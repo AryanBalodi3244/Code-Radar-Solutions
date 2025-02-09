@@ -12,7 +12,7 @@ void bubbleSort(int arr[],int size){
                 swapped = 1;  
             }
         }
-        if (!swapped) break; /
+        if (!swapped) break; 
        } 
 }
 void printArray(int arr[],int size){
