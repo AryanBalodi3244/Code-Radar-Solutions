@@ -26,5 +26,6 @@ void main(){
             scanf("%d", &arr[i]);
     }
     scanf("%d",&target);
-    binarySearch(arr,0 , size-1, target);
+    int k =binarySearch(arr,0 , size-1, target);
+    printf("%d",k);
 }
