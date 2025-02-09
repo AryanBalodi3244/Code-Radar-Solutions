@@ -9,13 +9,13 @@
             scanf("%d", &arr[i]);
         }
         for (int i = 0; i < size; i++) {
-            int max=a[i];
+            int max=arr[i];
             for (int j = i; j < size; j++) {
-                if (a[j]>a[i]){
-                    max=a[j];
+                if (arr[j]>arr[i]){
+                    max=arr[j];
                 }
         }
-        a[i]=max;       
+        arr[i]=max;       
         
          }
 for (int i = 0; i < size; i++) {
