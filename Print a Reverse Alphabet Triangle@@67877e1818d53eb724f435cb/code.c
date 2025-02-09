@@ -7,9 +7,9 @@
 void main(){
     int a;
     scanf("%d",&a);
-    for(int i=0;i<a;i++){
+    for(int i=a;i>0;i--){
     
-        for (char j='A'+ i ;j>='A';j--){
+        for (char j='A'; j<='A'+ i;j++){
             printf("%C ",j);
         }
         printf("\n");
