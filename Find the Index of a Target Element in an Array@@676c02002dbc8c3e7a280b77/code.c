@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void binarySearch(int arr[], int l , int r , int target){
+int binarySearch(int arr[], int l , int r , int target){
     while (l<=r){
         int mid = (l+r)/2;
         if  (arr[mid] !=target){
