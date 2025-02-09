@@ -5,7 +5,7 @@ int main(){
     scanf("%d", &size);
     int arr[size];
     int seen[100]={0};
-    int count;
+    int count=0;
     for (int i = 0; i < size; i++) {scanf("%d", &arr[i]);}
     for (int i = 0; i < size; i++) {
         if seen[arr[i]] count++;
@@ -17,6 +17,6 @@ int main(){
         }
         }
  
-        printf("-1\n");
+    printf("-1\n");
     return 0;
     }
