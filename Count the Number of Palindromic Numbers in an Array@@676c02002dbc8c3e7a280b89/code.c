@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int isPali(int n){
-    int reversed,original=n;
+    int reversed=0,original=n;
     while (n>0){
         reversed =  reversed*10 + n%10;
         n/=10;
