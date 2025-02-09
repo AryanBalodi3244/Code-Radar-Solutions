@@ -11,7 +11,7 @@ void main(){
       int mindiff=99999;
       int elm1 ,elm2;
         for (int i=0;i<size;i++){ 
-            for (int j=i+1;j<size;j++){ 
+            for (int j=i;j<size;j++){ 
                 int diff = abs(arr[j] - arr[i]);
                 if (diff<mindiff){
                     mindiff=arr[j]-arr[i];
