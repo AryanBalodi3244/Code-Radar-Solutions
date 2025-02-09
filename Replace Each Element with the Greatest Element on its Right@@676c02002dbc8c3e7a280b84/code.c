@@ -10,8 +10,9 @@
         }
         for (int i = 0; i < size; i++) {
             int max=arr[i];
+            int count=i;
             for (int j = i+1; j < size; j++) {
-                if (arr[j]>arr[i+1]){
+                if (arr[j]>arr[count++]){
                     max=arr[j];
                 }
         }
