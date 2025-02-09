@@ -8,12 +8,12 @@ int main(){
     int count;
     for (int i = 0; i < size; i++) {scanf("%d", &arr[i]);}
     for (int i = 0; i < size; i++) {
-        if seen[arr[i]] {count++;}
+        if seen[arr[i]] count++;
         seen[arr[i]]=1;
-        if (count>(size/2)){ return arr[i];}
+        if (count>(size/2)) return arr[i];
 
 
         }
  
-     
+     return -1;
     }
