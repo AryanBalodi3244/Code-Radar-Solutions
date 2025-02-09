@@ -14,7 +14,7 @@
          if (arr[i]<arr[i+1]){
             flagi=1;
          }
-         else if (arr[i]>arr[i+1]){
+         else if (arr[i] > arr[i + 1]){
             flagd=1;
          }
         }
