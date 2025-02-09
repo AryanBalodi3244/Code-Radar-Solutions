@@ -1,17 +1,20 @@
 #include <stdio.h>
 
-int binarySearch(int arr[], int l , int r , int target){
+void binarySearch(int arr[], int l , int r , int target){
     while (l<r){
-        mid = (l+r)/2;
+        int mid = (l+r)/2;
         if  (arr[mid] !=target){
             if (arr[mid]>target){
-                l=mid;
-            }else{
                 r=mid;
+               
+            }else{
+                l=mid;
+            
             }
         }
         else {
-            return mid;
+            printf("%d",mid);
+            break;
         }
     }
 }
@@ -23,5 +26,5 @@ void main(){
             scanf("%d", &arr[i]);
     }
     scanf("%d",&target);
-    binarySearch(arr,0 , size-1, target );
-    return 0;}
+    binarySearch(arr,0 , size-1, target);
+}
