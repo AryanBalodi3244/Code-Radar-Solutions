@@ -10,13 +10,12 @@
         }
         for (int i = 0; i < size; i++) {
             int max=arr[i];
-            for (int j = i; j < size; j++) {
+            for (int j = i+1; j < size; j++) {
                 if (arr[j]>arr[i]){
                     max=arr[j];
                 }
         }
-        arr[i]=max;       
-        
+              arr[i]=max;       
          }
 for (int i = 0; i < size; i++) {
             printf("%d ", arr[i]);
