@@ -10,7 +10,11 @@ int main(){
     for (int i = 0; i < size; i++) {
         if seen[arr[i]] count++;
         seen[arr[i]]=1;
-        if (count>(size/2)) return arr[i];
+        if (count>(size/2)){
+
+              printf("%d\n", arr[i]);
+            return 0;
+        };
 
 
         }
