@@ -54,5 +54,5 @@ void main(){
         scanf("%d",&(arr[i]) );
     }
     mergeSort(arr, 0, size-1);
-   printf("%d",arr[size-1]*arr[size-2]);
+   printf("%d",arr[size-1]*arr[size-2] > arr[0]*arr[1]?arr[size-1]*arr[size-2]:arr[0]*arr[1] );
     }
