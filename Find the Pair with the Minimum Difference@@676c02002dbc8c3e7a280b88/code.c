@@ -8,7 +8,7 @@ void main(){
         scanf("%d",&arr[i]);
 
     }
-    if (sizeof(arr)==1){
+    if ((sizeof(arr)/sizeof(arr[0]))==1){
         printf("%d",-1);
     }
       else{
