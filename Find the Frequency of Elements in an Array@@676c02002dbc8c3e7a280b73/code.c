@@ -4,7 +4,7 @@ int main(){
     int size,target;
     scanf("%d", &size);
     int arr[size];
-    int seen[100]={0};
+    int seen[101]={0};
     int count=0;
     for (int i = 0; i < size; i++) {scanf("%d", &arr[i]);}
     for (int i = 0; i < size; i++) {
