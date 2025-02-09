@@ -8,6 +8,7 @@
         for (int i = 0; i < size; i++) {
             scanf("%d", &arr[i]);
         }
+
     int increasing = 1, decreasing = 1;
 
     for (int i = 0; i < size - 1; i++) {
@@ -20,5 +21,5 @@
     }
 
     printf("%s\n", (increasing || decreasing) ? "YES" : "NO");
-    return 0;
+    
     }
