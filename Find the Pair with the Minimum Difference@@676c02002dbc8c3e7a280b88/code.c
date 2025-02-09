@@ -8,6 +8,9 @@ void main(){
         scanf("%d",&arr[i]);
 
     }
+    if (sizeof(arr)==1){
+        printf("%d",-1);
+    }
       int mindiff=99999;
       int elm1 ,elm2;
         for (int i=0;i<size;i++){ 
