@@ -16,8 +16,10 @@
                 }
         }
         arr[i]=max;       
-        if (arr[size-1]) {arr[i]=-1;}
+       
          }
+
+         arr[size-1]=-1;
 for (int i = 0; i < size; i++) {
             printf("%d ", arr[i]);
         }
