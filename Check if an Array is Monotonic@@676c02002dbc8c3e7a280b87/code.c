@@ -10,12 +10,12 @@
         }
     int flagi=0;
     int flagd=0;
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size-1; i++) {
          if ((arr[i]>=arr[i+1])==true){
             flagi=1;
          }
         }
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < size-1; i++) {
          if ((arr[i+1]>=arr[i])==false){
             flagd=1;
          }
