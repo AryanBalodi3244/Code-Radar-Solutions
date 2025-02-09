@@ -12,7 +12,7 @@
             int max=arr[i];
             int count=i;
             for (int j = i+1; j < size; j++) {
-                if (arr[j]>arr[count++]){
+                if (arr[j]>arr[i]){
                     max=arr[j];
                 }
         }
