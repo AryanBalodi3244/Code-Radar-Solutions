@@ -7,8 +7,8 @@ int main() {
         for (int j=1;i<=a-i;j++){
         printf(" ");
         }
-         for (int j=1;i<=(2*a-i);j++){
-        printf(" ");
+        for (int j=1;i<=(2*a-i);j++){
+        printf("*");
         }
     }
 }
