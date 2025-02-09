@@ -7,5 +7,5 @@ void main(){
     scanf("%d", &shift); 
     int temp[size]; 
     shift =shift%size;
-    for (int i=0;i<size;i++){temp[i]=arr[(i+shift)%size];} 
+    for (int i=0;i<size;i++){temp[i]=arr[(i + (size - shift))%size];} 
     for (int i=0;i<size;i++){printf("%d\n",temp[i]);} }
