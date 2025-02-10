@@ -17,5 +17,5 @@ int main(){
         i++;
         j--;
     }
-    if(flag==1){printf("YES")}
+    if(flag==1){printf("YES");}
     }
