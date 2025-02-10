@@ -9,7 +9,7 @@ int main(){
     int s=0,end=size-1,flag=0;
     for (int i=0;i<size && s!=end;i++){
         if (a[s]!=a[end]){
-            printf("NO");
+            printf("No");
             flag=1;
             break;
         }
@@ -21,6 +21,6 @@ int main(){
 
     }
 if (flag==0){
-printf("YES");
+printf("Yes");
 }
     }
