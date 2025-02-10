@@ -1,21 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int n, arr[1000], hash[100001] = {0}, maxLen = 0;
+    int n, arr[1000], longest = 1, curr = 1;
     scanf("%d", &n);
-    for (int i = 0; i < n; i++) {
+    
+    for (int i = 0; i < n; i++) 
         scanf("%d", &arr[i]);
-        hash[arr[i]] = 1;
+
+    for (int i = 1; i < n; i++) {
+        if (arr[i] == arr[i - 1] + 1) curr++;
+        else curr = 1;
+        if (curr > longest) longest = curr;
     }
 
-    for (int i = 0; i < n; i++) {
-        if (!hash[arr[i] - 1]) {
-            int num = arr[i], currLen = 0;
-            while (hash[num]) currLen++, num++;
-            if (currLen > maxLen) maxLen = currLen;
-        }
-    }
-
-    printf("%d", maxLen);
+    printf("%d", longest);
     return 0;
 }
