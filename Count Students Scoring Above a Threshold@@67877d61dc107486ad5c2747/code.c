@@ -10,7 +10,8 @@ void main(){
     for (int i=0;i<len;i++){
            scanf("%d %s %f",&rno[i],&name[i],&marks[i]);
     }
-    int find,count=0;
+    float find;
+    int count=0;
     scanf("%d",&find);
         for (int i=0;i<len;i++){
             if (marks[i]>find){
