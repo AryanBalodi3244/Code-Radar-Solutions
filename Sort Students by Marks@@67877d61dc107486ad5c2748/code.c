@@ -15,7 +15,7 @@ void main(){
            scanf("%d %s %f",&student[i].rno,&student[i].name,&student[i].marks);
     }
     for (int i=0;i<len;i++){
-           for (int j=i+1;j<len;i++){
+           for (int j=i;j<len;i++){
             if (student[j].marks>student[j+1].marks){
                 
                  struct Student temp = student[j];
