@@ -5,7 +5,7 @@ int main(){
     char a[50];
     char strarr[20][100];
     scanf("%[^\n]",a);
-    int maxc=0,count=0;
+    int count=0;
     char max[100];
        
     char *token = strtok(a, " ");
