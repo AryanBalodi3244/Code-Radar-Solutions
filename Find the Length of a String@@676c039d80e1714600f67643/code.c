@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main(){
-    char a[20];
+    char a[100];
     scanf("%s",a);
-    int i=0;
-    while (a[i]!='\0'){
-        i++;
+    int i=0,count=0;
+    for (int i = 0; a[i] != '\0'; ++i) {
+        ++count;
     }
-    printf("%d",i);
+    printf("%d",count);
 }
