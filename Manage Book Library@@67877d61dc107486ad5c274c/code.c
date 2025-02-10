@@ -14,7 +14,7 @@ void main(){
     for (int i=0;i<len;i++){
            scanf("%s %s %f",&book[i].title,&book[i].author,&book[i].price);
     }
-int tp;
+float tp;
 scanf("%f",&tp);
 printf("Books above price %.2f:\n",tp);
     for (int i=0;i<len;i++){
