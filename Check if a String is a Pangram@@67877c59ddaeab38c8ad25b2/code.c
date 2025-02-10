@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #include <string.h>
+#include <ctype.h>
 int main() {
     char str[1000];
     int freq[26] = {0}, count = 0;
