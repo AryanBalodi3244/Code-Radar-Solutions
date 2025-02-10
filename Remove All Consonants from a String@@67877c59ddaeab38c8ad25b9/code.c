@@ -12,6 +12,6 @@ int main(){
         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {a[j++]=a[i];}
         i++;}
       
-    
+     a[j] = '\0';
     printf("%s",a);
     }
