@@ -10,7 +10,7 @@ int main(){
     for (int i=0;i<=len;i++){
         if (a[i]==' ' || a[i]== '\0'){
             for (int j=i-1;j>=start;j--){
-                printf("%c",a[i]);
+                printf("%c",a[j]);
         }
         if (a[i]==' '){
             printf(" ");
