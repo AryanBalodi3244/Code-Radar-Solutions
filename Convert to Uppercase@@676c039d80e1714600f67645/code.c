@@ -7,7 +7,7 @@ int main(){
     int i=0;
     while (a[i]){
         ch=a[i];
-        putchar(toupper(ch));
+        printf("%c",toupper(ch));
         i++;
     }
   
