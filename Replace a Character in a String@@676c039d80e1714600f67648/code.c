@@ -11,6 +11,7 @@ int main(){
         if (a[i]==b){
             a[i]=c;
         }
+        i++;
     }
    
     printf("%s",a);
