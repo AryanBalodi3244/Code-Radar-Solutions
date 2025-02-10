@@ -16,7 +16,7 @@ int main(){
     }
     for (int i=0;i<count;i++){
         if (strlen(strarr[i]) > maxc){
-            strcpy(strarr[i],max);
+            strcpy(max,strarr[i]);
             maxc=strlen(strarr[i]);
         }
     }
