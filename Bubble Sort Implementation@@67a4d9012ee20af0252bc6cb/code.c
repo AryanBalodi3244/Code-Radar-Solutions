@@ -3,8 +3,8 @@
 void bubbleSort(int arr[],int size){
     int swapped;
        for (int i=0;i<size;i++){
-           swapped = 0;
-         for (int j=0;j<size-1;j++){
+        swapped = 0;
+         for (int j=0;j<size-i-1;j++){
        
             if (arr[j] > arr[j + 1]) {
                 
