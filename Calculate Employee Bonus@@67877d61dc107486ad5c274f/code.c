@@ -16,7 +16,7 @@ int main() {
     }
 
     for (int i = 0; i < len; i++) {
-        int bonus;
+        int bonus=0;
         if (employee[i].salary > 50000) {
             bonus= (5/100)*employee[i].salary;
         } else {
