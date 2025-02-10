@@ -7,5 +7,5 @@ int main(){
     while (a[i]!='\0'){
         i++;
     }
-    printf("%d",i+1);
+    printf("%d",i);
 }
