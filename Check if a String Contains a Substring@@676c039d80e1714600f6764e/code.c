@@ -7,21 +7,11 @@ int main(){
     scanf("%[^\n]",a);
      scanf("%[^\n]",b);
 
-    int count=0,flag=0;
-    char max[100];
-       
-    char *token = strtok(a, " ");
-    while (token != NULL && count < 20) {
-        strcpy(strarr[count], token);  
-        count++;
-        token = strtok(NULL, " ");  
-    }
-   
         if (strstr(a,b)!=NULL){
             printf("Yes");
         }
 
-        else(flag==1){
+        else{
         printf("No");
         }
 
