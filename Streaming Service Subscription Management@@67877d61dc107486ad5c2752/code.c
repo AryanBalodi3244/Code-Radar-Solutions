@@ -19,10 +19,12 @@ int main() {
         if (strcmp(subs[i].type, "Basic") == 0) {
             basic += subs[i].cost;
             count_basic++;
-        } else if (strcmp(subs[i].type, "Standard") == 0) {
+        }  
+        if (strcmp(subs[i].type, "Standard") == 0) {
             standard += subs[i].cost;
             count_standard++;
-        } else if (strcmp(subs[i].type, "Premium") == 0) {
+        }  
+        if (strcmp(subs[i].type, "Premium") == 0) {
             premium += subs[i].cost;
             count_premium++;
         }
