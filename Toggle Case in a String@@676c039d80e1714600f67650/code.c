@@ -16,13 +16,13 @@ int main(){
     }
 
     for(int i=0;i<count;i++){
-        int len=strlen(a[i]);
+        int len=strlen(strarr[i]);
         for (int j=0;j<len;j++){
-            if (isupper(a[i][j])){
-                a[i][j]=tolower(a[i][j]);
+            if (isupper(strarr[i][j])){
+                strarr[i][j]=tolower(strarr[i][j]);
             }
             else{
-                  a[i][j]=toupper(a[i][j]);
+                  strarr[i][j]=toupper(strarr[i][j]);
             }
         }
         printf("%s ",a[i]);
