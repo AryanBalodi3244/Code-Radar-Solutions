@@ -12,7 +12,7 @@ void main(){
     }
     float find;
     int count=0;
-    scanf("%d",&find);
+    scanf("%f",&find);
         for (int i=0;i<len;i++){
             if (marks[i]>find){
                count++;
