@@ -18,14 +18,12 @@ int main(){
         int s=0, end= strlen(strarr[i])-1;
         while (s < end) { 
             if (strarr[i][s++] != strarr[i][end--]) {
-                printf("NO\n");
+                printf("No\n");
                 return 0;
             }
         }
     }
-    
-    
-printf("YES");
 
+    printf("Yes");
     return 0;
     }
