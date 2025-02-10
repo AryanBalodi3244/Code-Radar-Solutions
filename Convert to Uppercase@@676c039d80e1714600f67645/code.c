@@ -3,12 +3,12 @@
 #include <ctype.h>
 int main(){
     char a[50];
-    scanf("%s",a);
+    scanf("%[^\n]",a);
     int i=0;
     while (a[i]){
         a[i]=toupper(a[i]);
         i++;
     }
-  printf("%s",a)
+  printf("%s",a);
     return 0;
     }
