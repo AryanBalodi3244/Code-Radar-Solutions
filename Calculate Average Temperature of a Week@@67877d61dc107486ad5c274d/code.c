@@ -6,5 +6,5 @@ void main(){
            scanf("%s %d",&day,&tmp);
            total+=tmp;
     }
-    printf("%.2f",(float)total/7);
+    printf("%.2f",(float)(total/7));
 }
