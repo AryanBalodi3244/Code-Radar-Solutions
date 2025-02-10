@@ -29,6 +29,9 @@ void main(){
     }
 
     }
+        for (int i=0;i<len;i++){
+                printf("Roll Number: %d, Name: %s, Marks: %.2f",rno[i],name[i],marks[i]);
+        }
 
 
     
