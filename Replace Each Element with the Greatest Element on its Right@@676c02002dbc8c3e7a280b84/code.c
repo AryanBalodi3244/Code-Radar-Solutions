@@ -8,17 +8,18 @@ int main() {
     for (int i = 0; i < size; i++) {
         scanf("%d", &arr[i]);
     }
-
+    int max = -991;
     for (int i = 0; i < size; i++) {
-        int max = -1;
+ 
         for (int j = i + 1; j < size; j++) {
             if (arr[j] > arr[i]) {
                 max = arr[j];  
             }
         }
         res[i] = max;
+        max=-999;
     }
-
+res[size-1]=-1;
     for (int i = 0; i < size; i++) {
         printf("%d ", res[i]);
     }
