@@ -3,7 +3,7 @@
 struct Employee {
     int id;
     char name[10];
-    float salary;
+    int salary;
 };
 
 int main() {
@@ -12,7 +12,7 @@ int main() {
     struct Employee employee[len];
 
     for (int i = 0; i < len; i++) {
-        scanf("%d %s %f", &employee[i].id, employee[i].name, &employee[i].salary);
+        scanf("%d %s %d", &employee[i].id, employee[i].name, &employee[i].salary);
     }
 
     for (int i = 0; i < len; i++) {
