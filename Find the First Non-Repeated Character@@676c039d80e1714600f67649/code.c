@@ -2,8 +2,7 @@
 #include <string.h>
 
 int main() {
-    char str[100], substr[5000][100];  
-    int count = 0;
+char str[20];
     
     scanf("%s", str);
       int count[256] = {0};
@@ -18,7 +17,7 @@ int main() {
         }
     }
 
-    printf("No unique character found\n");
+    printf("-");
     return 0;
 }
 
