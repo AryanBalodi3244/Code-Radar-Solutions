@@ -15,18 +15,13 @@ int main(){
     }
     int flag=0;
     for (int i=0;i<count;i++){
-        int s=0,end=strlen(strarr[i])-1;
-        for (int j=0;j<end+1 && s!=end;j++){
-            if (strarr[i][s]!=strarr[i][end]){
-                printf("NO");
-                flag=1;
+        int s=0, end=strlen(strarr[i])-1;
+        while (s < end) { // Check palindrome condition
+            if (strarr[i][s++] != strarr[i][end--]) {
+                printf("NO\n");
                 return 0;
             }
-            else {
-                s+=1;
-                end-=1;
-
-            }
+        }
     }
     }
     if (flag==0){
