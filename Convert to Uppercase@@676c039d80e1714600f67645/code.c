@@ -6,10 +6,9 @@ int main(){
     scanf("%s",a);
     int i=0;
     while (a[i]){
-        ch=a[i];
-        printf("%c",toupper(ch));
+        a[i]=toupper(a[i]);
         i++;
     }
-  
+  printf("%s",a)
     return 0;
     }
