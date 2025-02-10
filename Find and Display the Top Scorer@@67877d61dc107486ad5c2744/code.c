@@ -7,7 +7,7 @@ void main(){
     char name[10];
     float marks;
     scanf("%d",&len);
-    int max=-99;
+    float max=-99;
     int mrno;
     char mname[10];
     
