@@ -5,9 +5,9 @@ void main(){
     int rno[len];
     char name[len][10];
     float marks[len];
-    float min_marks=99.00;
+    float min_marks=999.00;
     for (int i=0;i<len;i++){
-           scanf("%d %s %.2f",&rno[i],&name[i],&marks[i]);
+           scanf("%d %s %f",&rno[i],&name[i],&marks[i]);
            if (marks[i]<min_marks){
             min_marks=marks;
            }
