@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <stdlib.h>
 
 int areRotations(char* s1, char* s2) {
   
@@ -17,6 +18,6 @@ int main(){
     char a[20],b[20],c;
     scanf("%s",a);
     scanf("%s",b);
-printf("%s",areRotations(a,b)? "Yes":"No")    ;
+    printf("%s",areRotations(a,b)? "Yes":"No");
 }
 
