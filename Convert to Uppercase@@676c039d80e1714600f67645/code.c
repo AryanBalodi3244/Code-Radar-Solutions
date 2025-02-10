@@ -3,10 +3,9 @@
 #include <ctype.h>
 int main(){
     char a[50];
-    char strarr[20][100];
-    scanf("%[^\n]",a);
+    scanf("%s",a);
     int i=0;
-    while (a[i] != '\0'){
+    while (a[i]){
         ch=a[i];
         putchar(toupper(ch));
         i++;
