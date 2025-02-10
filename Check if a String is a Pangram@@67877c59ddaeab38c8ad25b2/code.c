@@ -2,23 +2,16 @@
 
 #include <string.h>
 int main() {
-    char a[20];
-    scanf("%[^\n]", &a);
-    int n=strlen(a),flag=1;
-    for(int i=0;i<n;i++){
-        for (char j='a' ;j<='z';j++){
-            if (a[i]!=j){
-                printf("No");
-                flag=0;
-                return 0;
+    char str[1000];
+    int freq[26] = {0}, count = 0;
+    
+    fgets(str, sizeof(str), stdin);
 
-            }
-        }
+    for (int i = 0; str[i]; i++) {
+        if (isalpha(str[i]) && !freq[tolower(str[i]) - 'a']++) count++;
     }
 
-if (flag==1){
-    printf("Yes");
-}
-    
+    printf(count == 26 ? "Yes\n" : "No\n");
     return 0;
+
 }
