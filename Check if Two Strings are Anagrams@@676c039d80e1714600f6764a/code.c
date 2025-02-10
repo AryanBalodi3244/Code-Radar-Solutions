@@ -6,16 +6,17 @@ int main(){
     scanf("%s",a);
     scanf("%s",b);
 
-    int i=0,flag=0;
-    int j=strlen(a);
-    while (a[i]!='\0'){
-        if (a[i]!=b[j]){
-           printf("NO");
-           flag=1;
-           break;
+    int flag=0;
+    int l1=strlen(a);
+    int l2=strlen(b);
+    for (int i=0;i<l1;i++){
+        for (int j=0; j<l2;j++){
+            if (a[i]==b[j]){
+                flag++;
+                break;
+            }
         }
-        i++;
-        j--;
     }
-    if(flag==1){printf("YES");}
+    if(flag==l1){printf("YES");}
+    else {printf("NO");}
     }
