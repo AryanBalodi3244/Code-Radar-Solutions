@@ -8,9 +8,9 @@ int main() {
 
 
     for (int i = 0; i < n; i++) {
-        if (freq[nums[i]]) {
-            printf("%c: %d\n", a[i], freq[nums[i]]);
-            freq[nums[i]] = 0;
+        if (freq[a[i]]) {
+            printf("%c: %d\n", a[i], freq[a[i]]);
+            freq[a[i]] = 0;
         }
     }
 
