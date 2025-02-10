@@ -13,9 +13,10 @@ int main(){
         count++;
         token = strtok(NULL, " ");  
     }
+    int flag=0;
     for (int i=0;i<count;i++){
         
-        int s=0,end=strlen(strarr[i])-1,flag=0;
+        int s=0,end=strlen(strarr[i])-1;
         for (int j=0;j<end+1 && s!=end;j++){
             if (strarr[i][s]!=strarr[i][end]){
                 printf("NO");
