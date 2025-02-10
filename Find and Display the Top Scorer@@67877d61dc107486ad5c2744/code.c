@@ -20,5 +20,5 @@ void main(){
             mname=name;
         }
     }
-    printf("%Top Scorer: Roll Number: %d, Name: %s, Marks: %.2f",mrno,mname,max);
+    printf("Top Scorer: Roll Number: %d, Name: %s, Marks: %.2f",mrno,mname,max);
 }
