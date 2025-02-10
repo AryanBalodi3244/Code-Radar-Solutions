@@ -16,7 +16,6 @@ int main() {
             max=freq[a[i]];
             ch=a[i];
           }
-            freq[a[i]] = 0;
         }
 
     }
