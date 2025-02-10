@@ -14,7 +14,7 @@ void main(){
     }
 
     for (int i=0;i<len;i++){
-        if (marks[i]== min_marks){
+        if ((int)marks[i] ==(int) min_marks){
             printf("Student with Minimum Marks: Roll Number: %d, Name: %s, Marks: %.2f",rno[i],name[i],min_marks);
 
 }
