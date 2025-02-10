@@ -10,10 +10,10 @@ int main() {
     }
     char ch;
     int max=0;
-    for (int i = 0; i<n; i++) {
+    for (int i = 0; i<256; i++) {
           if (freq[i] > max){
-            max=freq[a[i]];
-            ch=a[i];
+            max=freq[i];
+            ch=i;
           }
         
 
