@@ -5,13 +5,14 @@ int main(){
     char a[100],b;
     scanf("%[^\n]",a);
 
-    int i=0;
+    int i=0,j=0;
     while (a[i]!='\0'){
     
         char ch = tolower(a[i]);
-        if (ch != 'a' || ch != 'e' || ch != 'i' || ch != 'o' || ch != 'u') 
+        if ( (ch != 'a' && ch != 'e' && ch != 'i' && ch != 'o' && ch != 'u')
+) 
         
-        {a[i]="";}
+        {a[j++]=a[i];}
         i++;}
       
     
