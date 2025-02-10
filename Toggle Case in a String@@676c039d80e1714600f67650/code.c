@@ -25,7 +25,7 @@ int main(){
                   strarr[i][j]=toupper(strarr[i][j]);
             }
         }
-        printf("%s ",a[i]);
+        printf("%s ",strarr[i]);
     }
     
     return 0;
