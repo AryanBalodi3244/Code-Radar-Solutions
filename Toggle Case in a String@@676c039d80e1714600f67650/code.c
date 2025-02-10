@@ -16,7 +16,7 @@ int main(){
     }
 
     for(int i=0;i<count;i++){
-        for (int j=0;j<strlen(a[i]);i++){
+        for (int j=0;j<strlen(a[i]);j++){
             if (isupper(a[i][j])){
                 a[i][j]=tolower(a[i][j]);
             }
