@@ -5,7 +5,7 @@ int main() {
     char a[20];
     scanf("%[^\n]", &a);
     int n=strlen(a),flag=1;
-    for(i=0;i<n;i++){
+    for(int i=0;i<n;i++){
         for (char j='a' ;j<='z';j++){
             if (a[i]!=j){
                 printf("No");
