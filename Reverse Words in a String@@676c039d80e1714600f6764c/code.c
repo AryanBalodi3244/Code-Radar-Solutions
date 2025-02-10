@@ -15,6 +15,7 @@ int main(){
     if (a[i]==' '){
         printf (" ");
     }
+    start =i+1;
         }
     }
     return 0;
