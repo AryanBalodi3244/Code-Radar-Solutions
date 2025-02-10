@@ -18,7 +18,7 @@ void main(){
            for (int j=i+1;i<len;i++){
             if (student[j].marks>student[j+1].marks){
                 
-                 struct student temp = students[j];
+                 struct Student temp = students[j];
                 students[j] = students[j + 1];
                 students[j + 1] = temp;
                 }
