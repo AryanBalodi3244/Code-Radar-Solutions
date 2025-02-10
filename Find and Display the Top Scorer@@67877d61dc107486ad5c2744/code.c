@@ -1,6 +1,6 @@
 #include <stdio.h>
+#include <string.h>
 
-#include <stdio.h>
 
 void main(){
     int len,rno;
@@ -17,7 +17,7 @@ void main(){
         if (marks>max){
             max=marks;
             mrno=rno;
-            mname=name;
+            strcpy(mname,name);
         }
     }
     printf("Top Scorer: Roll Number: %d, Name: %s, Marks: %.2f",mrno,mname,max);
