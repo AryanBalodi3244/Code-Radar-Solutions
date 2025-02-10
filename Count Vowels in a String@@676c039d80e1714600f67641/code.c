@@ -10,5 +10,6 @@ int main(){
     if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
         count++;
     }
+    i++}
     printf("%d",count);
-    }}
+    }
