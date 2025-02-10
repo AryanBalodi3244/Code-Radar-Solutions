@@ -9,5 +9,5 @@ int main(){
             count++;
         }
     }
-    printf("%d",count+2);
+    printf("%d",count+1);
 }
