@@ -4,7 +4,7 @@
 struct Subscription {
     char user[20];
     char type[10];
-    int cost;
+    float cost;
 };
 
 int main() {
