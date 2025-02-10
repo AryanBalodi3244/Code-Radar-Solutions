@@ -7,14 +7,14 @@ int main(){
     fgets(a, sizeof(a), stdin);
     int len =strlen(a);
     int start=0;       
-    for (int i=0;i<len;i++){
+    for (int i=0;i<=len;i++){
         if (a[i]==' ' || a[i]== '\0'){
             for (int j=i-1;j>=start;j--){
                 printf("%c",a[i]);
-    }
-    if (a[i]==' '){
-        printf (" ");
-    }
+        }
+        if (a[i]==' '){
+            printf(" ");
+        }
     start =i+1;
         }
     }
