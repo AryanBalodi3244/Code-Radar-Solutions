@@ -2,9 +2,9 @@
 #include <string.h>
 
 int main() {
-char str[20];
+char s[20];
     
-    scanf("%s", str);
+    scanf("%s", s);
       int count[256] = {0};
 
     for (int i = 0; s[i]; i++) 
