@@ -10,9 +10,9 @@ int main() {
     }
     char ch;
     int max=0;
-    for (int i = n-1; i>=0; i--) {
+    for (int i = 0; i<n; i++) {
         if (freq[a[i]]) {
-          if (freq[a[i]]> max){
+          if (freq[a[i]] > max){
             max=freq[a[i]];
             ch=a[i];
           }
