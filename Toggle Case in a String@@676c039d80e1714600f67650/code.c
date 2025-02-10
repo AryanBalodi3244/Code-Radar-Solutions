@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 int main(){
-    char a[];
+    char a[20];
     scanf("%s",&a);
     int i =0;
     while (a!='\0'){
