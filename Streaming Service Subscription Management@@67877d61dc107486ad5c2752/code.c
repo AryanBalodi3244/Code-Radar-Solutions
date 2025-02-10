@@ -15,7 +15,7 @@ int main() {
     int count_basic = 0, count_standard = 0, count_premium = 0;
 
     for (int i = 0; i < len; i++) {
-        scanf("%s %s %d", subs[i].user, subs[i].type, &subs[i].cost);
+        scanf("%s %s %f", subs[i].user, subs[i].type, &subs[i].cost);
         if (strcmp(subs[i].type, "Basic") == 0) {
             basic += subs[i].cost;
             count_basic++;
