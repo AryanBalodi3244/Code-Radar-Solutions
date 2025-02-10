@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 struct Vehicle {
     char id[20];
     char name[10];
@@ -12,7 +13,7 @@ int main() {
     int car=0,truck=0,bike=0;
     for (int i = 0; i < len; i++) {
         scanf("%s %s %d", &vehicle[i].id, vehicle[i].name, &vehicle[i].toll);
-        if (vehicle[i].name == "Car") car+=vehicle[i].toll;
+        if ((strcmp(vehicle[i].name, "Car") == 0)) car+=vehicle[i].toll;
         else if (vehicle[i].name == "Truck") truck+=vehicle[i].toll;
         else if (vehicle[i].name == "Bike") bike+=vehicle[i].toll;
     }
