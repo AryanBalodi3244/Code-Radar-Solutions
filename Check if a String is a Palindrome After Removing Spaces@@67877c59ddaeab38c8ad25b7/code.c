@@ -16,16 +16,17 @@ int main(){
     int flag=0;
     for (int i=0;i<count;i++){
         int s=0, end=strlen(strarr[i])-1;
-        while (s < end) { // Check palindrome condition
+        while (s < end) { 
             if (strarr[i][s++] != strarr[i][end--]) {
                 printf("NO\n");
+                
                 return 0;
             }
         }
     }
     }
-    if (flag==0){
+    
 printf("YES");
-}
+
     return 0;
     }
