@@ -14,7 +14,10 @@ int main(){
         token = strtok(NULL, " ");  
     }
     for (int i=0;i<count;i++){
-        printf("%s ",strrev(strarr[i]));
+            int len=strlen(a);
+            for (int i=len-1;i>=0;i--){
+                printf("%c",strarr[i]);
+    }
     }
 
     return 0;
