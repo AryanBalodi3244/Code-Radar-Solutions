@@ -2,13 +2,13 @@
 #include <string.h>
 #include <ctype.h>
 int main(){
-    char a[50];
-    char strarr[20][100];
+    char a[100];
+    char strarr[100][100];
     scanf("%[^\n]",a);
     int count=0;
        
     char *token = strtok(a, " ");
-    while (token != NULL && count < 20) {
+    while (token && count < 100) {
         strcpy(strarr[count], token);  
         count++;
         token = strtok(NULL, " ");  
