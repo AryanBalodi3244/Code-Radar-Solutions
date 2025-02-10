@@ -10,7 +10,7 @@ int main() {
     }
 
     for (int i = 0; i < size; i++) {
-        int max = -1; 
+        int max = -999; 
         for (int j = i + 1; j < size; j++) {
             if (arr[j] > arr[i]) {
                 max = arr[j];
