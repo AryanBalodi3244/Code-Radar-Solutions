@@ -2,10 +2,9 @@
 #include <string.h>
 #include <ctype.h>
 int main(){
-    char a[50],b,c;
+    char a[50];
     char strarr[20][100];
     scanf("%[^\n]",a);
-    int i=0;
     int maxc=0,count=0;
     char max[100];
        
@@ -15,7 +14,6 @@ int main(){
         count++;
         token = strtok(NULL, " ");  
     }
-
     for (int i=0;i<count;i++){
         if (strlen(strarr[i]) > maxc){
             strcpy(strarr[i],max);
