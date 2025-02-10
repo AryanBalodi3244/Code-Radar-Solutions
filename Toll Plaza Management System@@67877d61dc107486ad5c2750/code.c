@@ -1,9 +1,6 @@
 #include <stdio.h>
-
-#include <stdio.h>
-
 struct Vehicle {
-    int id;
+    char id[20];
     char name[10];
     int toll;
 };
