@@ -19,5 +19,5 @@ void main(){
                 break;
 }
     }
-    if (flag){printf("Student not fould");}
+    if (flag==1){printf("Student not found");}
 }
