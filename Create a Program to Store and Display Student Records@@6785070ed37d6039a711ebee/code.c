@@ -7,6 +7,6 @@ void main(){
     scanf("%d",&len);
     scanf("%d %s %f",&rno,&name,&marks);
     for (int i=0;i<len;i++){
-        printf("Roll Number: %d, Name: %s, Marks: %f\n",rno,name,marks);
+        printf("Roll Number: %d, Name: %s, Marks: %.2f\n",rno,name,marks);
     }
 }
