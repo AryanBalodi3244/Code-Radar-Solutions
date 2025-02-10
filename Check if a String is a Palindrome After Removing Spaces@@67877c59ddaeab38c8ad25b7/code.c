@@ -15,8 +15,8 @@ int main(){
     }
     for (int i=0;i<count;i++){
         
-         int s=0,end=strlen(strarr[i])-1,flag=0;
-        for (int j=0;j<size && s!=end;j++){
+        int s=0,end=strlen(strarr[i])-1,flag=0;
+        for (int j=0;j<end+1 && s!=end;j++){
             if (strarr[i][s]!=strarr[i][end]){
                 printf("NO");
                 flag=1;
@@ -27,9 +27,7 @@ int main(){
                 end-=1;
 
             }
-
     }
-
     }
     if (flag==0){
 printf("YES");
