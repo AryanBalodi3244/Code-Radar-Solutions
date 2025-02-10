@@ -7,9 +7,9 @@ int main(){
     scanf("%s",b);
 
     int i=0,flag=0;
-    int j=strlen(a)-1;
+    int j=strlen(a);
     while (a[i]!='\0'){
-        if (a[i]!= b[j]){
+        if (a[i]!=b[j]){
            printf("NO");
            flag=1;
            break;
