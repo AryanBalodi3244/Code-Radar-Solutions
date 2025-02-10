@@ -23,5 +23,4 @@ void main(){
 
 }
     }
-    printf("Count of students scoring above %.2f: %d",find,count);
 }
