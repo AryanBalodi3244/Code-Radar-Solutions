@@ -6,7 +6,7 @@ int main(){
     int i=0,count=0;
     for (int i = 0; a[i] != '\0'; ++i) {
         if (a[i]==' '){
-            ++count;
+            count++;
         }
     }
     printf("%d",count);
