@@ -25,7 +25,7 @@ int main() {
             grade = 'C';
         }
 
-        printf("Roll Number: %d, Name: %s, Marks: %.2f, Grade: %c\n", student[i].rno, student[i].name, student[i].marks, grade);
+        printf("Roll Number: %d, Name: %s, Grade: %c\n", student[i].rno, student[i].name, grade);
     }
 
     return 0;
