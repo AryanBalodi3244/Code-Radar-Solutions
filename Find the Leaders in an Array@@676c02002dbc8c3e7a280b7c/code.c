@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    int size;
+    int n;
     int result[100];
-    scanf("%d", &size);
-    int arr[size], res[size];
+    scanf("%d", &n);
+    int arr[n], res[n];
     int count=0;
         for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++) 
