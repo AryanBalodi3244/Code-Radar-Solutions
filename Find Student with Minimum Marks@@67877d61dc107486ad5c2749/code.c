@@ -7,7 +7,7 @@ void main(){
     float marks[len];
     float min_marks=99.00;
     for (int i=0;i<len;i++){
-           scanf("%d %s %.2ff",&rno[i],&name[i],&marks[i]);
+           scanf("%d %s %.2f",&rno[i],&name[i],&marks[i]);
            if (marks[i]<min_marks){
             min_marks=marks;
            }
