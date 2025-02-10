@@ -5,11 +5,10 @@ int main(){
     scanf("%s",a);
     int i=0,count=0;
     while(a[i]!='\0'){
-        char ch = tolower(a[i]);
-
+    char ch = tolower(a[i]);
     if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
         count++;
     }
-    i++}
+    i++;}
     printf("%d",count);
     }
