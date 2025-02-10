@@ -16,8 +16,10 @@ int main(){
     for (int i=0;i<count;i++){
             int len=strlen(strarr[i]);
             for (int j=len-1;j>=0;j--){
-                printf("%c ",strarr[i][j]);
+                printf("%c",strarr[i][j]);
     }
+    printf(" ");
+
     }
 
     return 0;
