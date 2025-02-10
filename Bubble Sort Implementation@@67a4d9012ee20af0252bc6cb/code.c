@@ -20,7 +20,7 @@ void printArray(int arr[],int size){
         printf("%d ",arr[i]);
     }
 }
-void main(){
+int main(){
     int size;
     scanf("%d",&size);
     int arr[size];
@@ -29,5 +29,5 @@ void main(){
     }
     bubbleSort(arr,size);
     printArray(arr,size);
- 
+    return 0;
 }
