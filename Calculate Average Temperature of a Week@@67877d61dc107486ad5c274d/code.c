@@ -1,5 +1,5 @@
 void main(){
-    int total,tmp;
+    int total=0,tmp;
     char day[10];
 
  
