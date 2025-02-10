@@ -18,7 +18,9 @@ int main() {
           }
             freq[a[i]] = 0;
         }
+
     }
+    printf("%c", ch);
 
     return 0;
 }
