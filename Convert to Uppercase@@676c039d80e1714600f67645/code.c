@@ -5,8 +5,12 @@ int main(){
     char a[50];
     char strarr[20][100];
     scanf("%[^\n]",a);
-    int count=0;
-    printf("%s",toupper(a));
+    int i=0;
+    while (a != '\0'){
+        ch=a[i];
+        putchar(toupper(ch));
+        i++;
+    }
   
     return 0;
     }
