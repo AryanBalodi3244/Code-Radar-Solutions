@@ -19,7 +19,7 @@ int main() {
     }
 
 
-     printf("Standards: %.2f, Premiums: %.2f, VIPs: %.2f",(float)standard,(float)premium,(float)vip);
+     printf("Standards: %.2f, Premiums: %.2f, VIP: %.2f",(float)standard,(float)premium,(float)vip);
 
 
     return 0;
