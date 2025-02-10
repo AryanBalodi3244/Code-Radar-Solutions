@@ -9,11 +9,9 @@ int main(){
     int i=0;
     while (a[i]!='\0'){
     
-    char ch = tolower(a[i]);
-    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
-        a[i]="*";
-    }
-    i++;}
+        char ch = tolower(a[i]);
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {a[i]='*';}
+        i++;}
       
     
     printf("%s",a);
