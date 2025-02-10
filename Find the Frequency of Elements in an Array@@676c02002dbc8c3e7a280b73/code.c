@@ -1,33 +1,23 @@
 #include <stdio.h>
 
 int main() {
-    int n;
+    int n, maxFreq = 0, maxElement;
     scanf("%d", &n);
-    int nums[n], used[n], usedCount = 0;
+    int nums[n];
 
-    for (int i=0; i<n; i++){
-        scanf("%d", &nums[i]);
+    for (int i = 0; i < n; i++) scanf("%d", &nums[i]);
+
+    for (int i = 0; i < n; i++) {
+        int count = 0;
+        for (int j = 0; j < n; j++) 
+            if (nums[i] == nums[j]) count++;
+
+        if (count > maxFreq) {
+            maxFreq = count;
+            maxElement = nums[i];
+        }
     }
 
-    for (int i=0; i<n; i++){
-        int count = 0, isUsed = 0;
-        for (int j=0; j<usedCount; j++){
-            if(nums[i]==used[j]){
-                isUsed = 1;
-                break;
-            }
-        }
-        if (!isUsed){
-            for (int j=0; j<n; j++){
-                if(nums[i]==nums[j]){
-                    count++;
-                }
-            }
-            used[usedCount++] = nums[i];
-        }
-        if (count != 0){
-            printf("%d %d\n", nums[i], count);
-        }
-    }
+    printf("%d\n", maxElement);
     return 0;
 }
