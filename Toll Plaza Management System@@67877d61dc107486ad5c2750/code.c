@@ -12,7 +12,7 @@ int main() {
     int len;
     scanf("%d", &len);
     struct Vehicle vehicle[len];
-    int car,truck,bike;
+    int car=0,truck=0,bike=0;
     for (int i = 0; i < len; i++) {
         scanf("%s %s %d", &vehicle[i].id, vehicle[i].name, &vehicle[i].toll);
         if (vehicle[i].name == "Car") car+=vehicle[i].toll;
