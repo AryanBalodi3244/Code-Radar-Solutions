@@ -6,8 +6,8 @@ int main() {
     int n=strlen(a);
     int freq[1001] = {0}; 
   for (int i = 0; a[i] != '\0'; i++) {
-    if (a[i]==' ') continue;
-        freq[a[i]]++; 
+        if (a[i]!=' ') 
+     {   freq[a[i]]++; }
     }
 
     for (int i = 0; i < n; i++) {
