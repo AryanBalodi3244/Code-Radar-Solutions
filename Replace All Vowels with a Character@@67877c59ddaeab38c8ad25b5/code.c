@@ -10,7 +10,7 @@ int main(){
     while (a[i]!='\0'){
     
         char ch = tolower(a[i]);
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {a[i]='*';}
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {a[i]=b;}
         i++;}
       
     
