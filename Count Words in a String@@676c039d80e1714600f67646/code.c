@@ -1,13 +1,19 @@
 #include <stdio.h>
-
+#include <string.h>
+#include <ctype.h>
 int main(){
-    char a[100];
+    char a[50];
+    char strarr[20][100];
     scanf("%[^\n]",a);
-    int i=0,count=0;
-    for (int i = 0; a[i] != '\0'; i++) {
-        if (a[i]==' '){
-            count++;
-        }
+    int maxc=0,count=0;
+    char max[100];
+       
+    char *token = strtok(a, " ");
+    while (token != NULL && count < 20) {
+        strcpy(strarr[count], token);  
+        count++;
+        token = strtok(NULL, " ");  
     }
-    printf("%d",count+1);
-}
+
+    printf("%s",count);
+    }
