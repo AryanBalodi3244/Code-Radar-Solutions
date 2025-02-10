@@ -11,7 +11,7 @@ int main() {
     }
 
     for (int i = 0; a[i]!='\0'; i++) {
-        if (a[i]===' ' && freq[a[i]]) {
+        if (a[i]==' ' && freq[a[i]]) {
             printf("%c: %d\n", a[i], freq[a[i]]);
             freq[a[i]] = 0;
         }
