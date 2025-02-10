@@ -3,7 +3,7 @@
 #include <ctype.h>
 int main(){
     char a[20],b[20];
-    scanf("%s",a);
+    scanf("%[^\n]",a);
     scanf("%s",b);
     int i=0,count=0;
     printf("%s",strcat(a,b));
