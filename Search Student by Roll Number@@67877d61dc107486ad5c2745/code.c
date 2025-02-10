@@ -2,11 +2,11 @@
 
 
 void main(){
-    int len,rno[len];
+    int len;
+    scanf("%d",&len);
+    int rno[len];
     char name[10][len];
     float marks[len];
-    scanf("%d",&len);
- 
     for (int i=0;i<len;i++){
            scanf("%d %s %f",&rno[i],&name[i],&marks[i]);
     }
