@@ -17,6 +17,6 @@ int main(){
             }
         }
     }
-    if(flag==l1){printf("YES");}
-    else {printf("NO");}
+    if(flag==l1){printf("Yes");}
+    else {printf("No");}
     }
