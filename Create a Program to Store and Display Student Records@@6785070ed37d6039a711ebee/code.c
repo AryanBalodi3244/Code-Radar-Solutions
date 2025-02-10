@@ -2,7 +2,7 @@
 
 void main(){
     int len,rno;
-    char name;
+    char name[10];
     float marks;
     scanf("%d",&len);
     scanf("%d %s %f",&rno,&name,&marks);
