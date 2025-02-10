@@ -21,7 +21,6 @@ int main() {
             bonus= (5/100)*employee[i].salary;
         } else {
             bonus= (10/100)*employee[i].salary;
-
         }
         
 
