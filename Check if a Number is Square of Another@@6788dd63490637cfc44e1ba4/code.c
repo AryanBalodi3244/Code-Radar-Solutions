@@ -1,11 +1,9 @@
-#include <math.h>
 #include <stdio.h>
 
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
 
-void main(){
-int a,b;
-scanf("%d %d",&a,&b);
-
-printf("%s", sqrt(a)==b ?"Yes":"No");
-
+    printf("%s\n", (b * b == a) ? "Yes" : "No");
+    return 0;
 }
