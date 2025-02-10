@@ -4,8 +4,11 @@
 int main(){
     char a[50];
     char strarr[20][100];
+    if (fgets(a, sizeof(a), stdin) == NULL || a[0] == '\n') {
+        printf("");
+        return 0;
+    }
     fgets(a, sizeof(a), stdin);
-    a[strcspn(a, "\n")] = '\0';
     int len =strlen(a);
     int start=0;       
     for (int i=0;i<=len;i++){
