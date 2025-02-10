@@ -2,6 +2,7 @@
 
 int main() {
     int size;
+    int result[100];
     scanf("%d", &size);
     int arr[size], res[size];
     int count=0;
