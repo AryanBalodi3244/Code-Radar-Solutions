@@ -4,24 +4,18 @@
 int main(){
     char a[50];
     char strarr[20][100];
-    scanf("%[^\n]",a);
-    int count=0;
-       
-    char *token = strtok(a, " ");
-    while (token != NULL && count < 20) {
-        strcpy(strarr[count], token);  
-        count++;
-        token = strtok(NULL, " ");  
+    fgets(a, sizeof(a), stdin);
+    int len =strlen(a);
+    int start=0;       
+    for (int i=0;i<len;i++){
+        if (a[i]==' ' || a[i]== '\0'){
+            for (int j=i-1;j>=start;j--){
+                printf("%c",a[i]);
     }
-    for (int i=0;i<count;i++){
-        if (strarr[i]==" ") continue;
-            int len=strlen(strarr[i]);
-            for (int j=len-1;j>=0;j--){
-                printf("%c",strarr[i][j]);
+    if (a[i]==' '){
+        printf (" ");
     }
-    printf(" ");
-
+        }
     }
-
     return 0;
     }
