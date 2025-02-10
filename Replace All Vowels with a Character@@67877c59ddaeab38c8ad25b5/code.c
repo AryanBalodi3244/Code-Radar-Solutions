@@ -11,7 +11,7 @@ int main(){
     
     char ch = tolower(a[i]);
     if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
-        a[i]="*"
+        a[i]="*";
     }
     i++;}
       
