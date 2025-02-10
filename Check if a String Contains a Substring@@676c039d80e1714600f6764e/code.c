@@ -16,15 +16,13 @@ int main(){
         count++;
         token = strtok(NULL, " ");  
     }
-    for (int i=0;i<count;i++){
-        if (strarr[i]==b){
+   
+        if (strstr(a,b)!=NULL){
             printf("Yes");
-            flag=1;
-            break;
         }
-    }
-    if (flag==1){
+
+        else(flag==1){
         printf("No");
-    }
+        }
 
     }
