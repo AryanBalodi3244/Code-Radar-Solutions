@@ -15,7 +15,7 @@ void main(){
     }
 
     for (int i=0;i<len;i++){
-                printf("Rectangle %d: Area = %.2f, Perimeter = %.2f\n",(float)(rectangle[i].len*rectangle[i].breadth),(float)((rectangle[i].len+rectangle[i].breadth)*2));
+                printf("Rectangle %d: Area = %.2f, Perimeter = %.2f\n",i,(float)(rectangle[i].len*rectangle[i].breadth),(float)((rectangle[i].len+rectangle[i].breadth)*2));
         }
 
 
