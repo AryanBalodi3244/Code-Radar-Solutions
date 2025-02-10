@@ -3,25 +3,23 @@
 int main() {
     int size;
     scanf("%d", &size);
-    int arr[size], res[size];
+    int arr[size];
 
     for (int i = 0; i < size; i++) {
         scanf("%d", &arr[i]);
     }
-    int max = -991;
-    for (int i = 0; i < size; i++) {
- 
-        for (int j = i + 1; j < size; j++) {
-            if (arr[j] > arr[i+1]) {
-                max = arr[j];  
-            }
+
+    int maxRight = -1; 
+    for (int i = size - 1; i >= 0; i--) {
+        int temp = arr[i]; 
+        arr[i] = maxRight; 
+        if (temp > maxRight) {
+            maxRight = temp; 
         }
-        res[i] = max;
-        max=-999;
     }
-res[size-1]=-1;
+
     for (int i = 0; i < size; i++) {
-        printf("%d ", res[i]);
+        printf("%d ", arr[i]);
     }
 
     return 0;
