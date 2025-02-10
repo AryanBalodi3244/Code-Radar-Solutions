@@ -2,7 +2,7 @@
 #include <string.h>
 int main() {
     char a[20];
-    scanf("%s", &a);
+    fgets(a, sizeof(a), stdin);
     int n=strlen(a);
     int freq[1001] = {0}; 
   for (int i = 0; a[i] != '\0'; i++) {
