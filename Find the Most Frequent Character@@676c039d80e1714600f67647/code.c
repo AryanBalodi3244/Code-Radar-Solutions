@@ -11,12 +11,12 @@ int main() {
     char ch;
     int max=0;
     for (int i = n-1; i>=0; i--) {
-        if (freq[a[i]]) {
+       
           if (freq[a[i]] > max){
             max=freq[a[i]];
             ch=a[i];
           }
-        }
+        
 
     }
     printf("%c", ch);
