@@ -14,8 +14,8 @@ int main() {
     for (int i = 0; i < len; i++) {
         scanf("%s %s %d", &vehicle[i].id, vehicle[i].name, &vehicle[i].toll);
         if ((strcmp(vehicle[i].name, "Car") == 0)) car+=vehicle[i].toll;
-        else if (vehicle[i].name == "Truck") truck+=vehicle[i].toll;
-        else if (vehicle[i].name == "Bike") bike+=vehicle[i].toll;
+        else if ((strcmp(vehicle[i].name, "Truck") == 0)) truck+=vehicle[i].toll;
+        else if ((strcmp(vehicle[i].name, "Bike") == 0)) bike+=vehicle[i].toll;
     }
 
 
