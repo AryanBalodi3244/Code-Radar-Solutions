@@ -10,7 +10,7 @@ struct Student {
 void main(){
     int len;
     scanf("%d",&len);
-
+    struct Student Students[len];
     for (int i=0;i<len;i++){
            scanf("%d %s %f",&Student[i].rno,&Student[i].name,&Student[i].marks);
     }
