@@ -9,5 +9,5 @@ void main(){
            scanf("%s %d",&day,&tmp);
            total+=tmp;
     }
-    printf("%.2f",(float)(total/7));
+    printf("Average Temperature: %.2f",(float)(total/7));
 }
