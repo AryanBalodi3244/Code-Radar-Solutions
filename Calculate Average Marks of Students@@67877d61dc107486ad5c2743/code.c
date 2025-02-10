@@ -11,5 +11,5 @@ void main(){
            total+=marks;
        
     }
-    printf("Average Mrks: %.2f",total/len);
+    printf("Average Marks: %.2f",total/len);
 }
