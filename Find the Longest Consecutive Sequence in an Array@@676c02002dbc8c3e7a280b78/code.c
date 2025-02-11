@@ -14,10 +14,7 @@ void bubbleSort(int arr[], int size){
     }
 
 }
-
 void main(){
-   
-
     int size;
     scanf("%d", &size);
     int arr[size];
@@ -41,6 +38,6 @@ void main(){
         if (curr_len > longest) {
         longest = curr_len;
     }
-    printf("Longest sequence length: %d\n", longest);
+    printf("%d", longest);
         
     }
