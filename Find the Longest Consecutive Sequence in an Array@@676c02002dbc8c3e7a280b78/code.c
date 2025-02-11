@@ -1,54 +1,46 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-void bubbleSort(int arr[], int n) {
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-                int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
+void bubbleSort(int arr[], int size){
+
+    for (int i=0;i<size;i++){
+        for (int j=0;j<size-i-1;j++){
+            if (arr[j]>arr[j+1]){
+                arr[j]=arr[j]^arr[j+1];
+                arr[j+1]=arr[j]^arr[j+1];
+                arr[j]=arr[j]^arr[j+1];
+                                }
+        }
+    }
+
+}
+
+void main(){
+   
+
+    int size;
+    scanf("%d", &size);
+    int arr[size];
+      for (int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+    }
+    bubbleSort(arr,size);
+    int longest=0;
+    int curr_len=1; 
+    for (int i=1;i<size;i++){
+        if  (arr[i] ==arr[i-1]+1){
+            curr_len++;
+        }
+        else if(arr[i] !=arr[i-1]) {
+            if (curr_len>longest){
+                longest=curr_len;
             }
+            curr_len=1
         }
     }
-}
-
-void insertLast(int arr[], int *m, int val) {
-    arr[*m] = val;
-    (*m)++;
-}
-
-int maxVal(int arr[], int n) {
-    int max = arr[0];
-    for (int i = 1; i < n; i++) {
-        if (arr[i] > max) {
-            max = arr[i];
-        }
+        if (curr_len > longest) {
+        longest = curr_len;
     }
-    return max;
-}
-
-int main() {
-    int n, m = 0, c = 1;
-    scanf("%d", &n);
-    int nums[n], count[n];
-
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &nums[i]);
+    printf("Longest sequence length: %d\n", longest);
+        
     }
-
-    bubbleSort(nums, n);
-
-    for (int i = 0; i < n - 1; i++) {
-        if (nums[i + 1] == nums[i] + 1) {
-            c++;
-        } else {
-            insertLast(count, &m, c);
-            c = 1;
-        }
-    }
-    insertLast(count, &m, c);
-
-    printf("%d", maxVal(count, m));
-
-    return 0;
-}
