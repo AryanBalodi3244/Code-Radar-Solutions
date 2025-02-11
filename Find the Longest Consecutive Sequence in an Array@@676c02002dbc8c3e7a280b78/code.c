@@ -18,7 +18,7 @@ void main(){
     int size;
     scanf("%d", &size);
     int arr[size];
-      for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++) {
         scanf("%d", &arr[i]);
     }
     bubbleSort(arr,size);
@@ -32,7 +32,7 @@ void main(){
             if (curr_len>longest){
                 longest=curr_len;
             }
-            curr_len=1
+            curr_len=1;
         }
     }
         if (curr_len > longest) {
