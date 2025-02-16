@@ -7,6 +7,6 @@ void main(){
         count++; 
         n <<= 1;
     }
-    printf("%d", 32-count);
+    printf("%d", count);
 
 }
