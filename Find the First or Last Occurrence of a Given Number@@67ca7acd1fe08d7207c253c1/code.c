@@ -7,7 +7,7 @@ if (mode=='F')
     }
 
  else if (mode =='L'){
-    for(itn i=n;i>0;i-- ){
+    for(int i=n;i>0;i-- ){
            if  (arr[i] == target){
             return i ;
         }
