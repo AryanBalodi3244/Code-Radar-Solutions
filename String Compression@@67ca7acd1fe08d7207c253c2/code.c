@@ -20,5 +20,6 @@ void compressString(char string[] ,char compressed[] ){
 
 
     }
+      compressed[j] = '\0';
 
 }
