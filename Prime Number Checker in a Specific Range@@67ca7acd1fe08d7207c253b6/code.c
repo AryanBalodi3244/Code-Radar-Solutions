@@ -15,7 +15,7 @@ if (flag!=1){
  printf("%d ",i);}
 
 }
-if (count ==(b-a)){
+if (count ==(b-a +1 )){
     printf("No prime numbers");
 }
 return 0;
