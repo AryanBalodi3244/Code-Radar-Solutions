@@ -14,6 +14,9 @@ if (flag!=1){
  printf("%d ",i);}
 
 }
+if  (flag==1){
+    printf("No prime numbers");
+}
 return 0;
 
 }
