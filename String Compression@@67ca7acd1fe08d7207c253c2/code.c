@@ -19,7 +19,7 @@ void compressString(char string[] ,char compressed[] ){
             count =0;
         }
         else if (count ==0){
-            compressed[i]==string[i]
+            compressed[i]==string[i];
         }
         i++;
 
