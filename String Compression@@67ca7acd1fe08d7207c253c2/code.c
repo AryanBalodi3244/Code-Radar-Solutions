@@ -21,5 +21,8 @@ void compressString(char string[] ,char compressed[] ){
 
     }
       compressed[j] = '\0';
+      if (strlen(compressed)>= strlen(string)){
+        strcpy (compressed , string);
+      }
 
 }
