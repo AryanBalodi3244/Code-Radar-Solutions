@@ -12,7 +12,7 @@ void compressString(char string[] ,char compressed[] ){
         count++;
         i++;
        }
-        else if (count>1) {
+        if (count>1) {
            j+= sprintf(compressed + j, "%d", count);
         }
        
