@@ -1,19 +1,18 @@
-void insertionSort(char arr[], int n){
-    for (int step=0;step<n-1;step++){
-        int min_idx =step;
-        for (int i =step+1 ; i<n ; i++){
-            if (arr[i][0]<arr[min_idx][0]){
-                min_idx = i;
-            }
-        }
-        if (min_idx != step) {
-        arr[min_idx] ^= arr[step] ^= arr[min_idx] ^= arr[step];
-    }    
-}
+void insertionSort(char arr[][100], int n){
+   for (int step= 0 ; step<n ;step++){
+    int key =arr[step][0];
+    int j= step-1;
+    while (j>=0 && strcmp( key  ,arr[j])>0 ){
+        arr[j+1] = arr[j];
+        --j;
+
+    }
+    arr[j+1] =key;
+   }
 }
 
-void printArray(char arr[], int n) {
+void printArray(char arr[][100], int n) {
   for (int i = 0; i < n; i++) {
-    printf("%c ", arr[i]);
+    printf("%s\n", arr[i]);
   }
 }
