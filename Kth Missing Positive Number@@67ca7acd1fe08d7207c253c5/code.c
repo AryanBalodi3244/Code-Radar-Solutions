@@ -1,16 +1,15 @@
 int findKthMissing (int arr[] ,int n , int k){
     int t=k;
-    for (int i=0 ; i<n ;i++){
-        if (arr[i+1] != arr[i]+1){
+    for (int i=1 ; i<n ;i++){
+        if (i != arr[i-1]){
             if (k!=1){
                 k--;
                 continue;
             }
             else{
-                return arr[i] +1;
+                return i;
             }
         }
     }
-    return arr[n-1]+t;
 
 }
