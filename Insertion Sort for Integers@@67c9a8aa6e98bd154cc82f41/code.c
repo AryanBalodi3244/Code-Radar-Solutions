@@ -1,4 +1,4 @@
-void selectionSort(int arr[], int n){
+void insertionSort(int arr[], int n){
    for (int step= 0 ; step<n-1 ;step++){
     int key =arr[step];
     int j= step-1;
