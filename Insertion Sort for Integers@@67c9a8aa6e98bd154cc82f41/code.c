@@ -1,5 +1,5 @@
 void insertionSort(int arr[], int n){
-   for (int step= 0 ; step<n-1 ;step++){
+   for (int step= 0 ; step<n ;step++){
     int key =arr[step];
     int j= step-1;
     while (j>=0 && key <arr[step]){
