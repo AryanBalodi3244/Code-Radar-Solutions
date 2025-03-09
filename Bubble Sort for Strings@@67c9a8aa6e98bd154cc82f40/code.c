@@ -1,5 +1,4 @@
 
-
 int bubbleSort(char *arr[] ,int size){
     int swapped;
        for (int i=0;i<size;i++){
@@ -16,6 +15,7 @@ int bubbleSort(char *arr[] ,int size){
         }
         if (!swapped) break; 
        } 
+       return 0;
 }
 void printArray(char *arr[],int size){
         for (int i=0;i<size;i++){
