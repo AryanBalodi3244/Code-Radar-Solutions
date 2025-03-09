@@ -6,13 +6,13 @@ void selectionSort(int arr[], int n){
                 min_idx = i;
             }
         }
-        arr[min_idx] ^= arr[step] ^= arr[min_idx];
+        arr[min_idx] ^= arr[step] ^= arr[min_idx] ^= arr[step];
     }
 }
 
 void printArray(int arr[], int n) {
   for (int i = 0; i < n; ++i) {
-    printf("%d  ", arr[i]);
+    printf("%d ", arr[i]);
   }
   printf("\n");
 }
