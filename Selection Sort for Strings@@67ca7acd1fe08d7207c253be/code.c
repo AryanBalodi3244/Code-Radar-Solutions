@@ -10,9 +10,9 @@ void selectionSort(char arr[][100], int n){
         if (min_idx != step) {
   
                 char temp[100];
-                strcpy(temp, arr[j]);  
-                strcpy(arr[j], arr[j + 1]);  
-                strcpy(arr[j + 1], temp);
+                strcpy(temp, arr[min_idx]);  
+                strcpy(arr[min_idx], arr[step]);  
+                strcpy(arr[step], temp);
             }    }
 }
 
