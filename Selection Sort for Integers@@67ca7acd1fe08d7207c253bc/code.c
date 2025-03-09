@@ -6,8 +6,10 @@ void selectionSort(int arr[], int n){
                 min_idx = i;
             }
         }
+        if (min_idx != step) {
         arr[min_idx] ^= arr[step] ^= arr[min_idx] ^= arr[step];
-    }
+    }    
+}
 }
 
 void printArray(int arr[], int n) {
