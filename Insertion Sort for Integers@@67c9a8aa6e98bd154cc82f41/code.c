@@ -2,7 +2,7 @@ void insertionSort(int arr[], int n){
    for (int step= 0 ; step<n ;step++){
     int key =arr[step];
     int j= step-1;
-    while (j>=0 && key <arr[step]){
+    while (j>=0 && key <arr[j]){
         arr[j+1] = arr[j];
         --j;
 
