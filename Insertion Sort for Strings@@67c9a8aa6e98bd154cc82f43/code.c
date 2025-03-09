@@ -1,3 +1,4 @@
+#include <string.h>
 void insertionSort(char arr[][100], int n){
     char key[100];
    for (int step= 0 ; step<n ;step++){
