@@ -8,7 +8,7 @@ void bubbleSort(char *arr[],int size){
        
             if (strcmp(arr[j] , arr[j + 1]) > 0) {
                 
-                char temp = arr[j];
+                char *temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
                 swapped = 1;  
