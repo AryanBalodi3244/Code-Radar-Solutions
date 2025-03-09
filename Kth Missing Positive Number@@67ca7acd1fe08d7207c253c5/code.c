@@ -1,6 +1,6 @@
 int findKthMissing (int arr[] ,int n , int k){
     int t=k;
-    for (int i=1 ; i<n ;i++){
+    for (int i=1 ;  ;i++){
            int found = 0;  
         
         for (int j = 0; j < n; j++) {  
@@ -11,7 +11,7 @@ int findKthMissing (int arr[] ,int n , int k){
         }
        if (!found) {  
             k--;  
-            if (k == 0) return i;  
+        if (k == 0) return i;  
         }
 
         }
