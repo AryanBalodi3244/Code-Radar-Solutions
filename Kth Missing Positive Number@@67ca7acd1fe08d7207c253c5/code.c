@@ -10,5 +10,6 @@ int findKthMissing (int arr[] ,int n , int k){
             }
         }
     }
+    else arr[n-1]+k;
 
 }
