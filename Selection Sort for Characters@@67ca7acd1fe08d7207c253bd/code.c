@@ -1,4 +1,4 @@
-void insertionSort(char arr[], int n){
+void selectionSort(char arr[], int n){
     for (int step=0;step<n-1;step++){
         int min_idx =step;
         for (int i =step+1 ; i<n ; i++){
