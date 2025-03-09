@@ -8,7 +8,7 @@ void insertionSort(char arr[][100], int n){
         --j;
 
     }
-    arr[j+1] =key;
+    strcpy(arr[j+1] ,key);
    }
 }
 
