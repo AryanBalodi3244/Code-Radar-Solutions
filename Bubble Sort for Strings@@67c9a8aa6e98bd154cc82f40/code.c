@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <string.h>
+#include <stdlib.h>
 void bubbleSort(char arr[],int size){
     int swapped;
        for (int i=0;i<size;i++){
