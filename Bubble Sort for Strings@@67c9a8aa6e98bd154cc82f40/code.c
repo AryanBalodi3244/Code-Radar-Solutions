@@ -23,7 +23,7 @@ void bubbleSort(char *arr[] ,int size){
     
 // }
 
-void printArray(char *arr[], int size) {
+void printArray(char arr[], int size) {
     for (int i = 0; i < size; i++) {
         if (arr[i] == NULL) {  // Check for NULL values
             printf("[NULL STRING]\n");
