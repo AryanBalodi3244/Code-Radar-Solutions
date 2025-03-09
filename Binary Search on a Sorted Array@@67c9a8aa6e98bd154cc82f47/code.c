@@ -4,13 +4,16 @@ int binarySearch(int arr[], int n , int target){
 
     while (l<r){
         int mid = (l+r)/2;
-        if (arr[mid] > target){
-            r= mid-1;
+        
+      if (arr[mid]!=target){
+          if (arr[mid] > target){
+            r= mid;
         }
         else if (arr[mid] < target){
             l= mid;
         }
-        else{
+      }
+    else{
             return mid;
         }
     }
