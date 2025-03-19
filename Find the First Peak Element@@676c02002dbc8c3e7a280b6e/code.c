@@ -25,10 +25,7 @@ int main(){
             }
         }
     }
-    if (!flag) {
-        printf("-1");
-        return 0;
-        }
-    printf("%d", arr[elem]);
+  
+    printf("%d", flag ? arr[elem] : -1);
     return 0;
 }
