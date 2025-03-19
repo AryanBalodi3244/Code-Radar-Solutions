@@ -12,7 +12,7 @@ int main(){
                 flag =1;
             }
         }
-        else if(i==size-1){
+        else if(i==size-2){
             if(arr[i]>arr[i-1]) {
                 elem = i;
                 flag =1;
@@ -25,8 +25,10 @@ int main(){
             }
         }
     }
-    if (!flag) {printf("-1");
-    return 0;}
+    if (!flag) {
+        printf("-1");
+        return 0;
+        }
     printf("%d", arr[elem]);
     return 0;
 }
