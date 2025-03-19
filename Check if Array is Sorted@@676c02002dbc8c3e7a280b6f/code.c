@@ -16,7 +16,7 @@ break;
 
 }}
 
-printf("%s", flag? "Sorted" : "Not Sorted");
+printf("%s", flag? "Not Sorted" : "Sorted");
 
 
 }
