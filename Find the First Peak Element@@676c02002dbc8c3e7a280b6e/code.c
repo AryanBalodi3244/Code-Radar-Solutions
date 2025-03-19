@@ -12,7 +12,7 @@ void main(){
                 flag =1;
             }
         }
-        else if(i==n-1){
+        else if(i==size-1){
             if(arr[i]>arr[i-1]) {
                 elem = i;
                 flag =1;
