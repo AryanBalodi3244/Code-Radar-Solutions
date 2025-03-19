@@ -25,5 +25,6 @@ void main(){
             }
         }
     }
+    if (!flag) printf("-1");
     printf("%d", arr[elem]);
 }
