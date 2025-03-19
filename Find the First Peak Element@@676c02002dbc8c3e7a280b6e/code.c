@@ -5,7 +5,7 @@ void main(){
     scanf("%d\n",&size);
     int arr[size];
     for (int i=0;i<size;i++){scanf("%d\n",&arr[i]);}
-    for (int i=0 ; i<size && !flag i++){
+    for (int i=0 ; i<size && !flag ;i++){
         if(i==0){
             if(arr[i]>arr[i+1]) {
                 elem = i;
@@ -19,7 +19,7 @@ void main(){
             }
         }
         else {
-            if(arr[i]>arr[i-1]) {
+            if(arr[i]>arr[i-1] && arr[i] > arr[i+1]) {
                 elem = i;
                 flag =1;
             }
