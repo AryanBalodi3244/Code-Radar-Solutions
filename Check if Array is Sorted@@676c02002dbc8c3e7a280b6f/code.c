@@ -10,7 +10,7 @@ scanf("%d", &arr[n]);
 for (int i=0;i<n;i++){
 if ( arr[i] > arr[i+1]) flag=1;
 }
-printf("%s", flag? "Sorted" : "Not Sorted");
+printf("%s", flag? "Not Sorted" : "Sorted");
 
 
 }
