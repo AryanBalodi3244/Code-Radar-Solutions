@@ -25,5 +25,5 @@ void main(){
             }
         }
     }
-    printf("%d", arr[i]);
+    printf("%d", arr[elem]);
 }
