@@ -14,7 +14,7 @@ for (int i=0;i<n-1;i++){
 flag=1;
 break;
 
-}
+}}
 
 printf("%s", flag? "Sorted" : "Not Sorted");
 
