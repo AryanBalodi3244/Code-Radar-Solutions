@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main(){
+int main(){
     int size , flag=0, elem;
     scanf("%d\n",&size);
     int arr[size];
@@ -25,6 +25,8 @@ void main(){
             }
         }
     }
-    if (!flag) printf("-1");
+    if (!flag) {printf("-1");
+    return 0;}
     printf("%d", arr[elem]);
+    return 0;
 }
