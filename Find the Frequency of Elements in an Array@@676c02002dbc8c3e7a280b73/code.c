@@ -19,7 +19,7 @@ int main() {
       }
     }  
     for (int i=0; i<n; i++){
-        if (freq[arr[i]]!=0)
+        if (freq[i]!=0)
         printf("%d %d\n" , arr[i] , freq[arr[i]]);
     }
     
