@@ -8,7 +8,7 @@ int main() {
     for (int i=0; i<n; i++){
         scanf("%d", &arr[i]);
     }
-    int freq[n]={0};
+    int freq[100]={0};
 
   for (int i=0; i<n; i++){
       if (freq[arr[i]]!=0){
@@ -19,6 +19,7 @@ int main() {
       }
     }  
     for (int i=0; i<n; i++){
+        if (freq[arr[i]]!=0)
         printf("%d %d\n" , arr[i] , freq[arr[i]]);
     }
     
