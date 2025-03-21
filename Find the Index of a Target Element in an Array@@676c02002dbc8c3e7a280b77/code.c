@@ -8,7 +8,7 @@ int binarySearchFirst(int arr[], int l, int r, int target) {
         if (arr[mid] < target){
             l= mid+1;
         }
-        else if (arr[mid]  target) r= mid-1;
+        else if (arr[mid] > target) r= mid-1;
         else if (arr[mid] == target) {
             result = mid;
         }
