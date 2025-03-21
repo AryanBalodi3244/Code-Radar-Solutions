@@ -9,8 +9,9 @@ int main(){
         return 0;
     }
     int i=0;
-    while (a[i]==" "){
+    while (a[i] ==' '){
         printf(" ");
+        i++;
     }
     char words[20][20];
     int count=0;
