@@ -10,7 +10,7 @@ int main() {
        else{
          char c[20];
          int j=0;
-        while( a[i]!=" " && a[i] != '\0'){
+        while( a[i] != ' ' && a[i] != '\0'){
             c[j++] = a[i++];
         }
         c[j] = '\0';  
