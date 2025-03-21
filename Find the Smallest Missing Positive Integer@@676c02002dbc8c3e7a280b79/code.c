@@ -7,7 +7,7 @@ int main(){
     int check,count=0;
     for (int i=0;i<size;i++){
         scanf("%d",&check);
-        if  (check>=0){
+        if  (check>0){
             arr[count++]=check;
     }}
       int n = count;
