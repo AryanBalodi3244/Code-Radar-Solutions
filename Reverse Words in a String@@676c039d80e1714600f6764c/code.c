@@ -15,16 +15,12 @@ int main(){
     }
     char words[20][20];
     int count=0;
-    char *token = strtok(a , " ");
-    while (token!=NULL && count <20){
-        char k[20];
-        int j=0;
     char *token = strtok(a, " ");
     while (token) {
         for (int j = strlen(token) - 1; j >= 0; j--) 
             printf("%c", token[j]);  
         token = strtok(NULL, " ");
         if (token) printf(" ");  
-    }}
+    }
     return 0;
     }
