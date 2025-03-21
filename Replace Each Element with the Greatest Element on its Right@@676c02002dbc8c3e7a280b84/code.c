@@ -14,7 +14,7 @@ int main() {
     if (arr[j]>arr[i]) arr[i]=arr[j];
    }
     }
-
+arr[size-1]=-1;
 for (int i = 0; i < size; i++) {
         printf("%d ", arr[i]);
     }
