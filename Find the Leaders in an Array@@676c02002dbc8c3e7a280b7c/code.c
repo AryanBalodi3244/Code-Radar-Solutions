@@ -13,10 +13,11 @@ int main() {
             printf("%d" , arr[i]);
             break;
         }
-     for (int j = i+1; j < n && i<n-2; j++) {
+     for (int j = i+1; j < n; j++) {
        
         if (arr[j]>arr[i]){
             printf("%d " , arr[j]);
+            break;
         }
     }
     }
