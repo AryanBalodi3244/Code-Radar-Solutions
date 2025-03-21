@@ -1,26 +1,20 @@
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
-int main(){
+
+int main() {
     char a[50];
-     fgets(a, sizeof(a), stdin);
-    if (strlen(a)==0){
-        printf("");
-        return 0;
-    }
-    int i=0;
-    while (a[i] ==' '){
-        printf(" ");
-        i++;
-    }
-    char words[20][20];
-    int count=0;
+    fgets(a, sizeof(a), stdin);
+
+    int i = 0;
+    while (a[i] == ' ') printf("%c", a[i++]);  // Print leading spaces
+
     char *token = strtok(a, " ");
     while (token) {
         for (int j = strlen(token) - 1; j >= 0; j--) 
-            printf("%c", token[j]);  
+            printf("%c", token[j]);  // Print reversed word
         token = strtok(NULL, " ");
-        if (token) printf(" ");  
+        if (token) printf(" ");  // Print spaces between words
     }
+
     return 0;
-    }
+}
