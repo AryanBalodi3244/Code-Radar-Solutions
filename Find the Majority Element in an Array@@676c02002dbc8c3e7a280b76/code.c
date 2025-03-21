@@ -5,18 +5,23 @@ int main(){
     scanf("%d", &size);
     int arr[size];
     int seen[100]={0};
-    int count=0;
-    for (int i = 0; i < size; i++) {scanf("%d", &arr[i]);}
-    for (int i = 0; i < size; i++) {
-        seen[arr[i]]++;
-        
-        if (seen[arr[i]]>(size/2)){
-
-            printf("%d\n", arr[i]);
-            return 0;
+    for (int i = 0 ; i < size ; i++){
+        if (seen[arr[i]] != 0){
+            seen[arr[i]]++;
         }
+        else{
+            seen[arr[i]]=1;
         }
- 
-    printf("-1\n");
-    return 0;
+         
     }
+    int maxCount=0;
+    for (int i = 0 ; i < 100 ; i++){
+        int count = seen[i];
+        if (count>maxCount){
+            maxCount=count;
+        }
+        
+}
+printf("%d" , maxCount);
+
+}
