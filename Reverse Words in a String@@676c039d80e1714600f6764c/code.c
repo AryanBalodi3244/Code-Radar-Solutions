@@ -8,6 +8,10 @@ int main(){
         printf("");
         return 0;
     }
+    int i=0;
+    while (a[i]==" "){
+        printf(" ");
+    }
     char words[20][20];
     int count=0;
     char *token = strtok(a , " ");
