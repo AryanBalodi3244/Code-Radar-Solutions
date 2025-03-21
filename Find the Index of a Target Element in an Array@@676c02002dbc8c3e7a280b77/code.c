@@ -4,13 +4,15 @@ int binarySearchFirst(int arr[], int l, int r, int target) {
     int result =-1;
     while (l<=r){
         int mid = (l+r)/2;
+        if (mid == target) {
+            result = mid;
+        }
         if (mid > target){
             l= mid+1;
         }
         else if (mid < target) r= mid-1;
-        else{
-            result = mid;
-        }
+
+       
     }
         return result;
 }
