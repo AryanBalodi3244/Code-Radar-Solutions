@@ -15,6 +15,7 @@ int main(){
                 seen[arr[i]] = 1;
                 seen[arr[j]]=1;
                 printf("%d %d\n" , arr[i], arr[j]);
+                break;
             }
     }
     }
