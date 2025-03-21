@@ -36,6 +36,9 @@ void main(){
         }
 
     }
+    if (len > maxLen){
+            maxLen= len;
+        }
     printf("%d" , maxLen);
 
         
