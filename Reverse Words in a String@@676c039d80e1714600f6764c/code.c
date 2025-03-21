@@ -4,7 +4,7 @@
 int main(){
     char a[50];
     scanf(" %[^\n]" , &a);
-    if (a=='\0'){
+    if (strlen(a)==0){
         printf("");
         return 0;
     }
