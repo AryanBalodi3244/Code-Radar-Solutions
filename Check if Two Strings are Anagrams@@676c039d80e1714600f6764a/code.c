@@ -13,7 +13,7 @@ int main(){
         return 0;
     }
     for(int i=0 ; i<l1 ;i++){
-        freq[a[i]]++
+        freq[a[i]]++;
         freq[b[j]]--;
     }
     for(int i=0 ; i<256 ;i++){
