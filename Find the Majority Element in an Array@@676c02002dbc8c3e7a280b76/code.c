@@ -5,6 +5,11 @@ int main(){
     scanf("%d", &size);
     int arr[size];
     int seen[100]={0};
+
+    for (int i = 0 ; i < size ; i++){
+        scanf("%d" , &arr[i]);
+        }
+
     for (int i = 0 ; i < size ; i++){
         if (seen[arr[i]] != 0){
             seen[arr[i]]++;
@@ -22,6 +27,6 @@ int main(){
         }
         
 }
-printf("%d" , maxCount);
-return 0;
+    printf("%d" , maxCount);
+    return 0;
 }
