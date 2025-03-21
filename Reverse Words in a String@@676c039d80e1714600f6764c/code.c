@@ -25,6 +25,6 @@ int main(){
             printf("%c", token[j]);  
         token = strtok(NULL, " ");
         if (token) printf(" ");  
-    }
+    }}
     return 0;
     }
