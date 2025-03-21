@@ -22,16 +22,17 @@ void main(){
         scanf("%d", &arr[i]);
     }
     bubbleSort(arr,size);
-    int len=0;
-    int maxLen=0;
-    for (int i=1;i<size ;i++){
-        if ( arr[i]-arr[i-1] == arr[i+1]-arr[i]) len++;
+    int len=1;
+    int maxLen=1;
+    for (int i=1;i<size; i++){
+       
+        if (arr[i] == arr[i-1]+1) len++;
         else {
 
         if (len > maxLen){
             maxLen= len;
         }
-        len =0;
+        len =1;
         }
 
     }
@@ -39,3 +40,5 @@ void main(){
 
         
     }
+
+    
