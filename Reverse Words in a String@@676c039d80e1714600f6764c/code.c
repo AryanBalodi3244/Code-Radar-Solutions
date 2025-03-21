@@ -6,7 +6,7 @@ int main() {
     fgets(a, sizeof(a), stdin);
 
     for (int i=0 ; i<strlen(a); i++){
-        if (a[i]==' ') printf(" ");
+        if (a[i]==' '){ printf(" ");}
        else{
          char c[20];
          int j=0;
