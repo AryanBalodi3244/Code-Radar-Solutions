@@ -11,10 +11,11 @@ int main() {
  for (int i = 0; i < n; i++) {
      if (i==n-1){
             printf("%d" , arr[i]);
+            break;
         }
      for (int j = i+1; j < n; j++) {
        
-        else if (arr[j]>arr[i]){
+        if (arr[j]>arr[i]){
             printf("%d " , arr[j]);
         }
     }
