@@ -11,7 +11,7 @@ int main(){
         char k[20];
         int j=0;
         for(int i= strlen(token)-1; i>=0 ; i--){
-            strcpy(k[j++] , token[i]);
+          k[j++] = token[i];
             
         }
         strcpy(words[count++] , k);
