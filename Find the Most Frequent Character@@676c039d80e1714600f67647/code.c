@@ -10,14 +10,14 @@ int main() {
         i++;
     }
     int maxFreq=0;
-    char maxFreqChar;
-    for(int i=0 ; i<strlen(a);i++){
-       
-            if(freq[a[i]]>maxFreq){
-                maxFreq=freq[a[i]];
-                maxFreqChar=a[i];
+    int maxFreqChar;
+    for(int i=0 ; i<256;i++){
+        if(freq[i]){
+            if(freq[i]>maxFreq){
+                maxFreq=freq[i];
+                maxFreqChar=i;
             }
-        
+        }
 
     }
 printf("%c" , maxFreqChar);
