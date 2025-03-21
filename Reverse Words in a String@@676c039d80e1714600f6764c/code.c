@@ -13,6 +13,7 @@ int main() {
         while( a[i]!=" " && a[i] != '\0'){
             c[j++] = a[i];
         }
+          c[j] = '\0';  
         for (int i=strlen(c)-1; i>=0 ;i--){
             printf("%c" , c[i]);
         }
