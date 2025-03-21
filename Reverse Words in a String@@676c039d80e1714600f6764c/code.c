@@ -9,7 +9,7 @@ int main(){
     char *token = strtok(a , " ");
     while (token!=NULL && count <20){
         char k[20];
-        int j=0
+        int j=0;
         for(int i= strlen(token)-1; i>=0 ; i--){
             strcpy(k[j++] , token[i]);
             
