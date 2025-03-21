@@ -5,18 +5,24 @@ int main(){
     char a[20],b[20],c;
     scanf("%s",a);
     scanf("%s",b);
-
-    int flag=0;
+    int freq[256]={0};
     int l1=strlen(a);
     int l2=strlen(b);
-    for (int i=0;i<l1;i++){
-        for (int j=0; j<l2;j++){
-            if (a[i]==b[j]){
-                flag++;
-                break;
-            }
+    if (l1 != l2) {
+        printf("No");
+        return 0;
+    }
+    for(int i=0 ; i<l1 ;i++){
+        freq[a[i]]++
+        freq[b[j]]--;
+    }
+    for(int i=0 ; i<256 ;i++){
+        if(freq[i]){
+            printf("No");
+            return 0;
         }
     }
-    if(flag==l1){printf("Yes");}
-    else {printf("No");}
+    printf("Yes");
+    return 0;
+    
     }
