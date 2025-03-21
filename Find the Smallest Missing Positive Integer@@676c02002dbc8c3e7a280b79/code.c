@@ -22,9 +22,10 @@ if (count ==0 ){ printf("%d", 1) ;return 0;}
 int k=1;
     for (int i=0;i<size ; i++){
 
-        if (arr[i] != k){
-            printf("%d" , arr[i]+1);
-return 0;        }
+    if (arr[i] != k){
+            printf("%d" , k);
+            return 0;        
+}
 k++;
     }
 return 0;
