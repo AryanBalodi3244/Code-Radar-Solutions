@@ -16,7 +16,7 @@ int main(){
     for (int i = 0 ; i < 100 ; i++){
         int count = seen[i];
         if (count > size/2){
-            maxCountElem = i;
+            majorityElem = i;
             break;
         }
        
