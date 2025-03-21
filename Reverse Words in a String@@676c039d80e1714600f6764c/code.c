@@ -14,7 +14,7 @@ int main(){
             
         }
 
-        strcpy(words , k);
+        strcpy(words[count] , k);
         token = strtok(NULL ," ");
         count++
 
