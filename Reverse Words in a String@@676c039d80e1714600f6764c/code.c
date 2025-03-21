@@ -4,9 +4,19 @@
 int main(){
     char a[50];
     scanf("%[^\n]" , &a);
-  
-    for(int i=strlen(a)-1 ; i>=0;i--){
-        printf("%c" , a[i]);
+    char words[20][20];
+    char *token = strtok(a , ' ');
+    while (token!=NULL && count <20){
+        char k;
+        for(int i= strlen(token)-1; i>=0 ; i--){
+            k=token[i];
+            
+        }
+
+        strcpy(k , token);
+        token = strtok(NULL , ' ');
+        count++
+
     }
     return 0;
     }
