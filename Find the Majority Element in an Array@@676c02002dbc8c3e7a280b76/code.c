@@ -11,12 +11,7 @@ int main(){
         }
 
     for (int i = 0 ; i < size ; i++){
-        if (seen[arr[i]] != 0){
-            seen[arr[i]]++;
-        }
-        else{
-            seen[arr[i]]=1;
-        }
+       seen[arr[i]]++
          
     }
    int majorityElem= -1;
