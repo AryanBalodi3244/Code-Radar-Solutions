@@ -8,7 +8,7 @@ int main(){
     int count=0;
     char *token = strtok(a , " ");
     while (token!=NULL && count <20){
-        char k;
+        char k[20];
         for(int i= strlen(token)-1; i>=0 ; i--){
             k=token[i];
             
