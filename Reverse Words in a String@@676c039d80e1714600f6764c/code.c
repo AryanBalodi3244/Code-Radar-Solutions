@@ -19,18 +19,12 @@ int main(){
     while (token!=NULL && count <20){
         char k[20];
         int j=0;
-        for(int i= strlen(token)-1; i>=0 ; i--){
-          k[j++] = token[i];
-            
-        }
-        k[j] = '\0';
-        strcpy(words[count++] , k);
-        token = strtok(NULL ," ");
-      
-
-    }
-    for(int i=0 ; i<count ;i++){
-        printf("%s " , words[i]);
+    char *token = strtok(a, " ");
+    while (token) {
+        for (int j = strlen(token) - 1; j >= 0; j--) 
+            printf("%c", token[j]);  
+        token = strtok(NULL, " ");
+        if (token) printf(" ");  
     }
     return 0;
     }
