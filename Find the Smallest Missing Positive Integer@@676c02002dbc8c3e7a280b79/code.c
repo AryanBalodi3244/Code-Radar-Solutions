@@ -20,8 +20,8 @@ void main(){
 
     for (int i=1;i<size ; i++){
 
-        if (arr[i] == arr[i-1]+1){
-            printf("%d" , arr[i-1]);
+        if (arr[i] != arr[i-1]+1){
+            printf("%d" , arr[i]-1);
             break;
         }
     }
