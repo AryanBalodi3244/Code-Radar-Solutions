@@ -13,10 +13,9 @@ int main(){
             k=token[i];
             
         }
-
-        strcpy(words[count] , k);
+        strcpy(words[count++] , k);
         token = strtok(NULL ," ");
-        count++
+      
 
     }
     for(int i=0 ; i<20 ;i++){
