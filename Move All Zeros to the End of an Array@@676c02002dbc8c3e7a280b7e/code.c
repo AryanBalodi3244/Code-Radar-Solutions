@@ -9,8 +9,8 @@ for (int i=0;i<size;i++){scanf("%d",&arr[i]);}
 
 int j =0 , count=0;
  for(int i=0;i<size ; i++){
-    if(arr[i]=!0){
-        temp[j++] =arr[i];
+    if(arr[i]!=0){
+        temp[j++] = arr[i];
 
     }
     else{
