@@ -19,8 +19,7 @@ int main(){
         }
          
     }
-    int maxCount=1;
-    int maxCountElem=0;
+   int majorityElem= -1;
     
     for (int i = 0 ; i < 100 ; i++){
         int count = seen[i];
@@ -28,12 +27,10 @@ int main(){
             maxCountElem = i;
             break;
         }
-        else{
-            maxCount=0;
-        }
+       
    
         
 }
-    printf("%d" , maxCount? maxCountElem : -1);
+    printf("%d" , maxCountElem );
     return 0;
 }
