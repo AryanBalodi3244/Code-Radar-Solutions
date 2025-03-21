@@ -28,5 +28,6 @@ int k=1;
 }
 k++;
     }
+    printf("%d" , k);
 return 0;
     } 
