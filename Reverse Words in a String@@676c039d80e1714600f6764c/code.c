@@ -5,16 +5,19 @@ int main() {
     char a[50];
     fgets(a, sizeof(a), stdin);
 
-    int i = 0;
-    while (a[i] == ' ') printf("%c", a[i++]);  // Print leading spaces
+    for (int i=0 ; i<strlen(a); i++){
+        if (a[i]==" ") printf(" ");
+       else{
+         char c[20];
+         int j=0;
+        while( a[i]!=" "){
+            c[j++] = a[i];
+        }
+        for (int i=strlen(c)-1; i>=0 ;i--){
+            printf("%c" , c[i]);
+        }
+       }
 
-    char *token = strtok(a, " ");
-    while (token) {
-        for (int j = strlen(token) - 1; j >= 0; j--) 
-            printf("%c", token[j]);  // Print reversed word
-        token = strtok(NULL, " ");
-        if (token) printf(" ");  // Print spaces between words
     }
-
     return 0;
 }
