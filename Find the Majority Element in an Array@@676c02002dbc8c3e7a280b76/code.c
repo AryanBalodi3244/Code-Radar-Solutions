@@ -19,17 +19,18 @@ int main(){
         }
          
     }
-    int maxCount=0;
+    int maxCount=1;
     int maxCountElem=0;
+    
     for (int i = 0 ; i < 100 ; i++){
         int count = seen[i];
-        if (count>maxCount){
-            maxCount=count;
-            maxCountElem=i;
+        if (count > size/2){
+            maxCountElem = i;
         }
-        else if (count == maxCount){
+        else{
             maxCount=0;
         }
+   
         
 }
     printf("%d" , maxCount? maxCountElem : -1);
