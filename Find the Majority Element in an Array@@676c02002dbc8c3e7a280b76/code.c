@@ -8,12 +8,9 @@ int main(){
 
     for (int i = 0 ; i < size ; i++){
         scanf("%d" , &arr[i]);
+          seen[arr[i]]++;
         }
 
-    for (int i = 0 ; i < size ; i++){
-       seen[arr[i]]++
-         
-    }
    int majorityElem= -1;
     
     for (int i = 0 ; i < 100 ; i++){
