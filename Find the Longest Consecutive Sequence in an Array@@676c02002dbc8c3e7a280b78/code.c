@@ -35,5 +35,7 @@ void main(){
         }
 
     }
+    printf("%d" , maxLen);
+
         
     }
