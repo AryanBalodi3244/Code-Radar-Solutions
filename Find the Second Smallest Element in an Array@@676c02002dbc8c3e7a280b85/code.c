@@ -13,9 +13,9 @@ void main(){
         first = arr[i];
         
     }
-        if (arr[i] < second && arr[i]>first ) second= arr[i];
+    if (arr[i] < second && arr[i]>first ) second= arr[i];
 
 
   }
-  printf("%d" , second);
+  printf("%d" , second==999? -1 : second);
 }
