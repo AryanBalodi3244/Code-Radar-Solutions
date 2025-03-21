@@ -8,14 +8,17 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
- for (int i = 0; i < n-1; i++) {
+ for (int i = 0; i < n; i++) {
      for (int j = i+1; j < n; j++) {
-        if (arr[j]>arr[i]){
+        if (i==n-1){
+            printf("%d" , arr[i]);
+        }
+        else if (arr[j]>arr[i]){
             printf("%d " , arr[j]);
         }
     }
     }
-    printf("%d" , arr[n-1]);
+  
 
     return 0;
 }
