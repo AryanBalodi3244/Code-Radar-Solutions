@@ -27,8 +27,11 @@ int main(){
             maxCount=count;
             maxCountElem=i;
         }
+        else if (count == maxCount){
+            maxCount=0;
+        }
         
 }
-    printf("%d" , maxCountElem);
+    printf("%d" , maxCount? maxCountElem : -1);
     return 0;
 }
