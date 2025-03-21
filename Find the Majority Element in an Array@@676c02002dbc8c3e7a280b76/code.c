@@ -26,6 +26,7 @@ int main(){
         int count = seen[i];
         if (count > size/2){
             maxCountElem = i;
+            break;
         }
         else{
             maxCount=0;
