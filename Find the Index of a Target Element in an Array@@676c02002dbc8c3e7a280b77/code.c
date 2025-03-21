@@ -11,6 +11,7 @@ int binarySearchFirst(int arr[], int l, int r, int target) {
         else if (arr[mid] > target) r= mid-1;
         else if (arr[mid] == target) {
             result = mid;
+            r=mid-1;
         }
        
     }
