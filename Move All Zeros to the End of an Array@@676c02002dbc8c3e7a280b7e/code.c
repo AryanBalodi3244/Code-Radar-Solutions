@@ -21,7 +21,7 @@ int j =0 , count=0;
 temp[j++] = 0;
  }
    for(int i=0;i<j ; i++){
-printf("%d" , temp[i]);
+printf("%d " , temp[i]);
 
  }
 
