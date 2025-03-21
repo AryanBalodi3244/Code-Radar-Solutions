@@ -10,7 +10,7 @@ int main(){
     while (token!=NULL && count <20){
         char k[20];
         for(int i= strlen(token)-1; i>=0 ; i--){
-            strcpy(k , token[i]);
+            strcpy(k[i] , token[i]);
             
         }
         strcpy(words[count++] , k);
