@@ -3,7 +3,7 @@
 #include <ctype.h>
 int main(){
     char a[50];
-    scanf("%[^\n]" , &a);
+    scanf(" %[^\n]" , &a);
     char words[20][20];
     int count=0;
     char *token = strtok(a , " ");
