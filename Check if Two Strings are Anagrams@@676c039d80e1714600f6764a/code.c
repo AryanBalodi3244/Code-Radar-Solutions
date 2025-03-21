@@ -14,7 +14,7 @@ int main(){
     }
     for(int i=0 ; i<l1 ;i++){
         freq[a[i]]++;
-        freq[b[j]]--;
+        freq[b[i]]--;
     }
     for(int i=0 ; i<256 ;i++){
         if(freq[i]){
