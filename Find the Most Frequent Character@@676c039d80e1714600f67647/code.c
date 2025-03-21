@@ -3,7 +3,7 @@
 int main() {
     char a[20];
     scanf("%[^\n]", &a);
-    int freq[256];
+    int freq[256]={0};
     int i=0;
     while (a[i]!='\0'){
         freq[a[i]]++;
