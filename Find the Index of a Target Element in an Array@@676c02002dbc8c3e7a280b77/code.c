@@ -5,7 +5,7 @@ int binarySearchFirst(int arr[], int l, int r, int target) {
     while (l<=r){
         int mid = (l+r)/2;
         if (mid < target){
-            l= mid+1
+            l= mid+1;
         }
         else if (mid < target) r= mid-1;
         else{
