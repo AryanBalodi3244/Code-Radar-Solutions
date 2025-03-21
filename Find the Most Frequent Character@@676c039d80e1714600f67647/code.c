@@ -12,10 +12,10 @@ int main() {
     int maxFreq=0;
     char maxFreqChar;
     for(int i=0 ; i<strlen(a);i++){
-        if(freq[arr[i]]){
+        if(freq[a[i]]){
             if(freq[arr[i]]>maxFreq){
-                maxFreq=freq[arr[i]];
-                maxFreqChar=arr[i];
+                maxFreq=freq[a[i]];
+                maxFreqChar=a[i];
             }
         }
 
