@@ -19,7 +19,7 @@ int main(){
 
     }
     for(int i=0 ; i<20 ;i++){
-        printf("%s " , arr[i]);
+        printf("%s " , words[i]);
     }
     return 0;
     }
