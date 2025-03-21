@@ -12,9 +12,7 @@ int c;
 for (int i=0 ; i< size ; i++){
     int sum=0;
     while (arr[i]>0){
-        int k= arr[i]%10;
-        if (k<0)  k*=-1;
-        sum+=k;
+        sum+=abs(arr[i]%10);
         arr[i]/=10;
     }
     arr[i]= sum;
