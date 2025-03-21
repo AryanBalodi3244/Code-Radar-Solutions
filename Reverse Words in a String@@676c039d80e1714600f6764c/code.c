@@ -14,6 +14,7 @@ int main(){
           k[j++] = token[i];
             
         }
+        k[j] = '\0';
         strcpy(words[count++] , k);
         token = strtok(NULL ," ");
       
