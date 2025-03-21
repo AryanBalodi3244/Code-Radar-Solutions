@@ -20,13 +20,15 @@ int main(){
          
     }
     int maxCount=0;
+    int maxCountElem=0;
     for (int i = 0 ; i < 100 ; i++){
         int count = seen[i];
         if (count>maxCount){
             maxCount=count;
+            maxCountElem=i;
         }
         
 }
-    printf("%d" , maxCount);
+    printf("%d" , maxCountElem);
     return 0;
 }
