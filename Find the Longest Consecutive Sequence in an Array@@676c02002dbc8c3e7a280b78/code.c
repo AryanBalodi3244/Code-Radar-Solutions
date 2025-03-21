@@ -22,22 +22,18 @@ void main(){
         scanf("%d", &arr[i]);
     }
     bubbleSort(arr,size);
-    int longest=0;
-    int curr_len=1; 
-    for (int i=1;i<size;i++){
-        if  (arr[i] ==arr[i-1]+1){
-            curr_len++;
+    int len=0;
+    int maxLen=0;
+    for (int i=1;i<size ;i++){
+        if ( arr[i]-arr[i-1] == arr[i+1]-[i]) len++;
+        else {
+
+        if (len > maxLen){
+            maxLen= max;
         }
-        else if(arr[i] !=arr[i-1]) {
-            if (curr_len>longest){
-                longest=curr_len;
-            }
-            curr_len=1;
+        len =0;
         }
+
     }
-        if (curr_len > longest) {
-        longest = curr_len;
-    }
-    printf("%d", longest);
         
     }
