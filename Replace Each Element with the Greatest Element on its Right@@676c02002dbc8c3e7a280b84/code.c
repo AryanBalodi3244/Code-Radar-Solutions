@@ -8,19 +8,16 @@ int main() {
     for (int i = 0; i < size; i++) {
         scanf("%d", &arr[i]);
     }
-
-    int maxRight = -1; 
-    for (int i = size - 1; i >= 0; i--) {
-        int temp = arr[i]; 
-        arr[i] = maxRight; 
-        if (temp > maxRight) {
-            maxRight = temp; 
-        }
+ for (int i = 0; i < size; i++) {
+   
+   for (int j=i+1 ;j<size;j++ ){
+    if (arr[j]>arr[i]) arr[i]=arr[j];
+   }
     }
 
-    for (int i = 0; i < size; i++) {
+for (int i = 0; i < size; i++) {
         printf("%d ", arr[i]);
     }
-
+  
     return 0;
 }
