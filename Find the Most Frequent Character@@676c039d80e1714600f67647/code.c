@@ -13,7 +13,7 @@ int main() {
     char maxFreqChar;
     for(int i=0 ; i<strlen(a);i++){
         if(freq[a[i]]){
-            if(freq[arr[i]]>maxFreq){
+            if(freq[a[i]]>maxFreq){
                 maxFreq=freq[a[i]];
                 maxFreqChar=a[i];
             }
