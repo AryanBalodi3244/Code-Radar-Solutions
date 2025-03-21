@@ -3,22 +3,23 @@
 int main() {
     char a[20];
     scanf("%[^\n]", &a);
-    int n=strlen(a);
-    int freq[256] = {0}; 
-  for (int i = 0; a[i] != '\0'; i++) {
-        freq[a[i]]++; 
+    int freq[256];
+    int i=0;
+    while (a[i]!='\0'){
+        freq[a[i]]++;
+        i++;
     }
-    char ch;
-    int max=0;
-    for (int i = 0; i<256; i++) {
-          if (freq[i] > max){
-            max=freq[i];
-            ch=i;
-          }
-        
+    int maxFreq=0;
+    char maxFreqChar='';
+    for(int i=0 ; i<256;i++){
+        if(freq[i]){
+            if(freq[i]>maxFreq){
+                maxFreq=freq[i];
+                maxFreqChar=freq[i];
+            }
+        }
 
     }
-    printf("%c", ch);
-
+printf("%c" , maxFreqChar);
     return 0;
 }
