@@ -4,6 +4,10 @@
 int main(){
     char a[50];
     scanf(" %[^\n]" , &a);
+    if (a=='\0'){
+        printf("");
+        return 0;
+    }
     char words[20][20];
     int count=0;
     char *token = strtok(a , " ");
