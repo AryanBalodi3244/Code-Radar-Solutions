@@ -29,7 +29,7 @@ void main(){
         else {
 
         if (len > maxLen){
-            maxLen= max;
+            maxLen= len;
         }
         len =0;
         }
