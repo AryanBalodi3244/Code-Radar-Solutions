@@ -25,7 +25,7 @@ void main(){
     int len=0;
     int maxLen=0;
     for (int i=1;i<size ;i++){
-        if ( arr[i]-arr[i-1] == arr[i+1]-[i]) len++;
+        if ( arr[i]-arr[i-1] == arr[i+1]-arr[i]) len++;
         else {
 
         if (len > maxLen){
