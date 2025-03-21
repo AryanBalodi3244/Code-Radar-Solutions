@@ -13,7 +13,7 @@ int main() {
             printf("%d" , arr[i]);
             break;
         }
-     for (int j = i+1; j < n && i<n-1; j++) {
+     for (int j = i+1; j < n && i<n-2; j++) {
        
         if (arr[j]>arr[i]){
             printf("%d " , arr[j]);
