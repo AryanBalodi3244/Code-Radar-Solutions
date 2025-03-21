@@ -6,6 +6,7 @@ int binarySearchFirst(int arr[], int l, int r, int target) {
         int mid = (l+r)/2;
         if (mid == target) {
             result = mid;
+            break;
         }
         if (mid > target){
             l= mid+1;
