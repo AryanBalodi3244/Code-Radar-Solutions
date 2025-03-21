@@ -3,7 +3,7 @@
 #include <ctype.h>
 int main(){
     char a[50];
-    scanf(" %[^\n]" , &a);
+     fgets(a, sizeof(a), stdin);
     if (strlen(a)==0){
         printf("");
         return 0;
