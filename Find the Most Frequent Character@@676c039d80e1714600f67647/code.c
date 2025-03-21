@@ -11,11 +11,11 @@ int main() {
     }
     int maxFreq=0;
     char maxFreqChar;
-    for(int i=0 ; i<256;i++){
-        if(freq[i]){
-            if(freq[i]>maxFreq){
-                maxFreq=freq[i];
-                maxFreqChar=freq[i];
+    for(int i=0 ; i<strlen(a);i++){
+        if(freq[arr[i]]){
+            if(freq[arr[i]]>maxFreq){
+                maxFreq=freq[arr[i]];
+                maxFreqChar=arr[i];
             }
         }
 
