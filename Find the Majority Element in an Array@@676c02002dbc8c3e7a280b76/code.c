@@ -23,6 +23,6 @@ int main(){
    
         
 }
-    printf("%d" , maxCountElem );
+    printf("%d" , majorityElem );
     return 0;
 }
