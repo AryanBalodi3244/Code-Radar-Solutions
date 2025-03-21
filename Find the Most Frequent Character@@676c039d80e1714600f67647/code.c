@@ -10,7 +10,7 @@ int main() {
         i++;
     }
     int maxFreq=0;
-    char maxFreqChar;
+    char maxFreqChar='\0';
     for(int i=0 ; i<256;i++){
         if(freq[i]){
             if(freq[i]>maxFreq){
