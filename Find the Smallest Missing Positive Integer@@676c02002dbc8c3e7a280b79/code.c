@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-void main(){ 
+int main(){ 
     int size;
     scanf("%d",&size);
     int arr[size];
@@ -18,12 +18,12 @@ void main(){
                     arr[j+1]=arr[j]^arr[j+1]; 
                     arr[j]=arr[j]^arr[j+1]; } }} 
 
+if (count ==0 ) printf("%d", 1) ; return 0;
     for (int i=0;i<size ; i++){
 
         if (arr[i] != arr[i+1]-1){
             printf("%d" , arr[i]+1);
-            break;
-        }
+return 0;        }
     }
-
+return 0;
     } 
