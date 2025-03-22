@@ -18,7 +18,7 @@ int main() {
    int n=0;
     int len = strlen(str);
    for (int i=0 ; i<len;i++){
-    for(int i= len-1; j >= i ; j++){
+    for(int j= len-1; j >= i ; j++){
         char k;
         strncpy(k , s+i ; j-i+1);
         if (is_unique(substr , n , j)){
