@@ -5,7 +5,6 @@ int main() {
     char a[50];
     fgets(a, sizeof(a), stdin);
     if (a[0]=='\n') {
-        printf("");
         return 0;
     }
     for (int i=0 ; i<strlen(a); i++){
