@@ -13,6 +13,7 @@ int main() {
     return 0;
     int len =strlen(s);
     int maxLen= -1;
+    int paliLen;
     for(int i=0 ; i<len;i++){
         int end = len-1;
         for (int j =end ; i>=i ; i++ ){
