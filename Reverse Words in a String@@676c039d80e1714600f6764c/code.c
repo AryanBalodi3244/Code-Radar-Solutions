@@ -4,7 +4,7 @@
 int main() {
     char a[50];
     fgets(a, sizeof(a), stdin);
-    if (a[0]=='\n') {
+   if (strlen(a) == 1 && a[0] == '\n') { 
         return 0;
     }
     for (int i=0 ; i<strlen(a); i++){
