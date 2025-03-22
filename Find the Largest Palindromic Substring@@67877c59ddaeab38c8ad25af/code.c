@@ -22,7 +22,7 @@ int main() {
                 if(paliLen > maxLen){
                     maxLen = paliLen;
                     strncpy(result , s+i , paliLen);
-                    result[i]= '\0';
+                    result[maxLen]= '\0';
 
                 }
             }
