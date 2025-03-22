@@ -10,7 +10,6 @@ int main() {
     char s[100], result[100];  
     
     scanf("%s", s);
-    return 0;
     int len =strlen(s);
     int maxLen= -1;
     int paliLen;
