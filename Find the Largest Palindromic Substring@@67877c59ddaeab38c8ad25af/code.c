@@ -1,30 +1,31 @@
 #include <stdio.h>
 #include <string.h>
 
+int isPalindrome(char s[], int start, int end) {
+    while (start < end) if (s[start++] != s[end--]) return 0;
+    return 1;
+}
+
 int main() {
     char s[100], result[100];  
     
     scanf("%s", s);
-      int n = strlen(s), start = 0, maxLen = 1;
+    return 0;
+    int len =strlen(s);
+    int maxLen= -1;
+    char result[20];
+    for(int i=0 ; i<len;i++){
+        int end = len-1;
+        for (int j =end ; i>=i ; i++ ){
+            if (s[i]==s[j] && isPalindrome(s,i,j)){
+                paliLen = j-i+1;
+                if(paliLen > maxLen){
+                    maxLen = paliLen;
+                    strncpy(result , s+i , paliLen);
 
-    for (int i = 0; i < n; i++) {
-        for (int j = i; j < n; j++) {
-            int isPal = 1;
-            for (int x = i, y = j; x < y; x++, y--) {
-                if (s[x] != s[y]) {
-                    isPal = 0;
-                    break;
                 }
-            }
-            if (isPal && (j - i + 1) > maxLen) {
-                start = i;
-                maxLen = j - i + 1;
             }
         }
     }
-
-    strncpy(result, s + start, maxLen);
-    result[maxLen] = '\0';
-    printf("%s\n", result);
-    return 0;
+    printf("%s" , result);
 }
