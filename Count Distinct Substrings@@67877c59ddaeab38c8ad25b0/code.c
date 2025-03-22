@@ -21,7 +21,7 @@ int main() {
     for(int j= len-1; j >= i ; j++){
         char k[20];
         strncpy(k , str+i , j-i+1);
-        result[j - i + 1] = '\0';
+        k[j - i + 1] = '\0';
         if (is_unique(substr , n , j)){
             substr[n++]= k;
         }
