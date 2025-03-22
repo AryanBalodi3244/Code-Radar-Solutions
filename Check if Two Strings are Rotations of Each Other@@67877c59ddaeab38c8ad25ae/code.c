@@ -17,11 +17,11 @@ int main(){
     }
     for(int i=0 ; i<strlen(a) ; i++){
         if (a[i]!= b[(i+firstIndex)%(strlen(b))]){
-            print("No");
+            printf("No");
             return 0; 
         }
     }
-    print("Yes");
+    printf("Yes");
     return 0;
 }
 
