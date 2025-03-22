@@ -17,7 +17,7 @@ int main() {
     scanf("%s", str);
    int k=0;
     int len = strlen(str);
-   for (int i=0 ; i<l;i++){
+   for (int i=0 ; i<len;i++){
     for(int i= len-1; j >= i ; j++){
         char k;
         strncpy(k , s+i ; j-i+1);
