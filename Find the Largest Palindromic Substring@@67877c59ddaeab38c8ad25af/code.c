@@ -16,13 +16,13 @@ int main() {
     int paliLen;
     for(int i=0 ; i<len;i++){
         int end = len-1;
-        for (int j =end ; i>=i ; i++ ){
+        for (int j =end ; j>=i ; j-- ){
             if (s[i]==s[j] && isPalindrome(s,i,j)){
                 paliLen = j-i+1;
                 if(paliLen > maxLen){
                     maxLen = paliLen;
                     strncpy(result , s+i , paliLen);
-                    result[maxLen]= '\0';
+                    result[paliLen]= '\0';
 
                 }
             }
