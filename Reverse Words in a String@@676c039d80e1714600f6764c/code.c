@@ -4,7 +4,10 @@
 int main() {
     char a[50];
     fgets(a, sizeof(a), stdin);
-
+    if (a[0]=='\0') {
+        printf(" ");
+        return 0;
+    }
     for (int i=0 ; i<strlen(a); i++){
         if (a[i]==' '){ printf(" ");}
        else{
