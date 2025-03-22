@@ -19,7 +19,7 @@ int main() {
     int len = strlen(str);
    for (int i=0 ; i<len;i++){
     for(int j= len-1; j >= i ; j++){
-        char k;
+        char k[20];
         strncpy(k , str+i , j-i+1);
         result[j - i + 1] = '\0';
         if (is_unique(substr , n , j)){
