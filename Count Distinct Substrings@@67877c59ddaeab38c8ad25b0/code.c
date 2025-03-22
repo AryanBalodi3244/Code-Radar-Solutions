@@ -23,7 +23,7 @@ int main() {
         strncpy(k , str+i , j-i+1);
         k[j - i + 1] = '\0';
         if (is_unique(substr , k , n)){
-            substr[n++]= k;
+            strcpy(substr[n++], k);
         }
     }
    }
