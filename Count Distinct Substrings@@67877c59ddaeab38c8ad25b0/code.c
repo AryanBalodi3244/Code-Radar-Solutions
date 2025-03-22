@@ -22,7 +22,7 @@ int main() {
         char k[20];
         strncpy(k , str+i , j-i+1);
         k[j - i + 1] = '\0';
-        if (is_unique(substr , n , j)){
+        if (is_unique(substr , k , n)){
             substr[n++]= k;
         }
     }
