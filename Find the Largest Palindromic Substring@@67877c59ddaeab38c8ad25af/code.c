@@ -22,10 +22,12 @@ int main() {
                 if(paliLen > maxLen){
                     maxLen = paliLen;
                     strncpy(result , s+i , paliLen);
+                    result[i]= '\0';
 
                 }
             }
         }
     }
     printf("%s" , result);
+    return 0;
 }
