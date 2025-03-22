@@ -20,7 +20,7 @@ int main() {
    for (int i=0 ; i<len;i++){
     for(int j= len-1; j >= i ; j++){
         char k;
-        strncpy(k , s+i ; j-i+1);
+        strncpy(k , k+i ; j-i+1);
         if (is_unique(substr , n , j)){
             substr[n++]= k;
         }
